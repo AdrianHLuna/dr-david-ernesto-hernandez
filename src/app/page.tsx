@@ -234,50 +234,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 4. CLINICAL CASE STUDY BENTO */}
-      <section className="py-24 bg-slate-50 border-t border-slate-200">
-        <div className="container mx-auto px-6 max-w-5xl">
-          <div className="rounded-3xl border border-slate-200 bg-gradient-to-br from-white via-slate-50 to-emerald-50/10 p-8 sm:p-12 shadow-md relative overflow-hidden">
-            <div className="absolute top-0 right-0 w-64 h-64 bg-emerald-500/5 rounded-full blur-3xl pointer-events-none" />
-            
-            <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
-              
-              {/* Stats Box Left */}
-              <div className="md:col-span-5 grid grid-cols-2 gap-4">
-                <div className="bg-white p-6 rounded-2xl border border-slate-200 text-center shadow-sm">
-                  <span className="text-[10px] uppercase font-bold text-slate-400 block mb-1">Pérdida de Peso</span>
-                  <span className="text-3xl font-black text-emerald-600 font-serif">-43 kg</span>
-                </div>
-                <div className="bg-white p-6 rounded-2xl border border-slate-200 text-center shadow-sm">
-                  <span className="text-[10px] uppercase font-bold text-slate-400 block mb-1">Diabetes e HTA</span>
-                  <span className="text-3xl font-black text-emerald-600 font-serif">Remisión</span>
-                </div>
-                <div className="bg-white p-6 rounded-2xl border border-slate-200 text-center col-span-2 shadow-sm">
-                  <span className="text-[10px] uppercase font-bold text-slate-400 block mb-1">Procedimiento Realizado</span>
-                  <span className="text-base font-bold text-slate-800">Manga Gástrica por Laparoscopia</span>
-                </div>
-              </div>
-
-              {/* Case Details Right */}
-              <div className="md:col-span-7 space-y-4">
-                <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-600 text-[10px] uppercase font-bold tracking-wider">
-                  Remisión Metabólica
-                </span>
-                <h3 className="text-2xl sm:text-3xl font-bold text-slate-900 font-serif">Caso Clínico de Impacto</h3>
-                <p className="text-slate-600 font-light text-sm sm:text-base leading-relaxed">
-                  "Después de años de padecer presión alta y dolor severo en las rodillas que limitaba mi movilidad, decidí operarme de manga gástrica con el Dr. David Hernández. A un año del procedimiento, he perdido 43 kg, he dejado de tomar medicamentos para la presión y he recuperado por completo mi energía."
-                </p>
-                <div className="border-t border-slate-200 pt-4 text-xs font-light text-slate-400">
-                  <p className="font-bold text-slate-800">Rommel G. (Paciente de Manga Gástrica)</p>
-                  <p className="italic mt-0.5">* Los resultados individuales pueden variar en cada caso.</p>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* 5. DISEASES SECTION */}
       <section id="procedimientos" className="py-24 bg-white border-t border-slate-200">
         <div className="container mx-auto px-6 max-w-7xl">

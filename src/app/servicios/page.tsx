@@ -57,7 +57,7 @@ export default function ServiciosPage() {
                   <div>
                     <span className="text-[9px] text-slate-400 uppercase tracking-widest block font-bold">Costo Estimado</span>
                     <span className="text-xl font-bold font-mono text-emerald-600 flex items-center mt-0.5">
-                      <FaDollarSign size={14} /> {service.priceRange.replace(/\D/g, "") ? service.priceRange : "Valoración"}
+                      <FaDollarSign size={14} /> {service.priceRange?.replace(/\D/g, "") ? service.priceRange : "Valoración"}
                     </span>
                   </div>
 
