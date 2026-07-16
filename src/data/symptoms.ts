@@ -13,7 +13,7 @@ export const symptoms: Symptom[] = [
     ],
     whyConsult: "Debe programar una consulta si a pesar de seguir planes de nutrición y ejercicio no logra perder peso de manera sostenida, o si nota una reganancia rápida del peso previamente perdido tras una cirugía bariátrica.",
     relatedConditions: ["obesidad-clinica", "reganancia-de-peso-bariatrica"],
-    image: "/images/symptoms/dificultad-peso.jpg",
+    image: "/sintomas/dificultad-peso.png",
     seo: {
       title: "Resistencia para Bajar de Peso y Reganancia CDMX | Dr. David",
       description: "Dificultad crónica para bajar de peso o reganancia tras cirugía bariátrica. Valoración de manga y bypass en Roma Norte y Polanco.",
@@ -32,7 +32,7 @@ export const symptoms: Symptom[] = [
     ],
     whyConsult: "Debe consultar con el cirujano general si el ardor en el pecho es diario, si interrumpe su sueño por las noches, o si requiere de antiácidos constantes para poder comer sin molestias.",
     relatedConditions: ["reflujo-y-hernia-hiatal", "reganancia-de-peso-bariatrica"],
-    image: "/images/symptoms/ardor-pecho.jpg",
+    image: "/sintomas/ardor-pecho.png",
     seo: {
       title: "Causas de Agruras y Reflujo Ácido CDMX | Dr. David Hernández",
       description: "¿Sufre de acidez constante o reflujo después de comer? Conozca el tratamiento definitivo y la cirugía antireflujo en CDMX.",
@@ -51,7 +51,7 @@ export const symptoms: Symptom[] = [
     ],
     whyConsult: "Es de vital importancia acudir a consulta o urgencias si el dolor debajo de las costillas es continuo por más de 4 horas, si se acompaña de fiebre, náuseas, vómito o si nota que su piel u ojos se tornan amarillos (ictericia).",
     relatedConditions: ["piedras-en-la-vesicula"],
-    image: "/images/symptoms/dolor-costillas.jpg",
+    image: "/sintomas/dolor-costillas.png",
     seo: {
       title: "Dolor de Vesícula Ocular y Cólico Biliar CDMX | Dr. David",
       description: "Dolor en las costillas del lado derecho tras comer grasas. Especialista en cirugía de vesícula biliar en Roma Norte y Polanco.",
@@ -70,7 +70,7 @@ export const symptoms: Symptom[] = [
     ],
     whyConsult: "Debe ser valorado quirúrgicamente de inmediato si el abultamiento se pone duro, cambia a una coloración morada o roja, produce dolor severo persistente o náuseas, ya que indica una hernia atascada o estrangulada.",
     relatedConditions: ["hernias-abdominales"],
-    image: "/images/symptoms/abultamiento.jpg",
+    image: "/sintomas/abultamiento.png",
     seo: {
       title: "Abultamiento y Hernias Abdominales CDMX | Dr. David",
       description: "¿Nota una bolita en el ombligo o ingle que duele al hacer esfuerzo? Diagnóstico de hernias con el Dr. David Ernesto Hernández Torres.",
@@ -89,7 +89,7 @@ export const symptoms: Symptom[] = [
     ],
     whyConsult: "Busque atención médica de urgencia si presenta dolor abdominal severo acompañado de rigidez del abdomen (duro al tacto), incapacidad para expulsar gases, fiebre o vómitos persistentes.",
     relatedConditions: ["apendicitis-aguda", "piedras-en-la-vesicula"],
-    image: "/images/symptoms/dolor-agudo.jpg",
+    image: "/sintomas/dolor-agudo.png",
     seo: {
       title: "Urgencias por Dolor Abdominal Agudo CDMX | Dr. David",
       description: "Dolor abdominal severo y progresivo. Descarte apendicitis aguda o peritonitis. Consulta de urgencias 24/7 en la CDMX.",
@@ -108,7 +108,7 @@ export const symptoms: Symptom[] = [
     ],
     whyConsult: "Consulte si presenta dificultad para tragar alimentos sólidos, vómitos diarios tras comer o un reflujo ácido/amargo intenso que no disminuye con antiácidos y protectores.",
     relatedConditions: ["reganancia-de-peso-bariatrica", "reflujo-y-hernia-hiatal"],
-    image: "/images/symptoms/intolerancia-vomito.jpg",
+    image: "/sintomas/intolerancia-vomito.png",
     seo: {
       title: "Complicaciones y Reflujo Post-Cirugía Bariátrica CDMX",
       description: "Vómitos o intolerancia tras manga o bypass. Diagnóstico y cirugía de revisión con el Dr. David Ernesto Hernández Torres.",
@@ -127,7 +127,7 @@ export const symptoms: Symptom[] = [
     ],
     whyConsult: "Se recomienda acudir a consulta si experimenta ansiedad por comer constantemente o si ha perdido la capacidad de sentirse satisfecho, requiriendo un abordaje médico-metabólico o la valoración de una revisión bariátrica.",
     relatedConditions: ["obesidad-clinica", "reganancia-de-peso-bariatrica"],
-    image: "/images/symptoms/hambre-frecuente.jpg",
+    image: "/sintomas/hambre-frecuente.png",
     seo: {
       title: "Hambre Frecuente y Ansiedad por Comer CDMX | Dr. David",
       description: "Entienda por qué no siente saciedad al comer y cómo tratar la ansiedad por la comida desde un enfoque médico y bariátrico en la CDMX.",
@@ -146,7 +146,7 @@ export const symptoms: Symptom[] = [
     ],
     whyConsult: "Consulte con un especialista si experimenta cansancio extremo sin causa aparente, ronquidos intensos con pausas respiratorias al dormir o si le falta el aire al caminar tramos cortos.",
     relatedConditions: ["obesidad-clinica"],
-    image: "/images/symptoms/cansancio.jpg",
+    image: "/sintomas/cansancio.png",
     seo: {
       title: "Fatiga y Falta de Aire por Obesidad CDMX | Dr. David Hernández",
       description: "¿Siente cansancio constante o le falta el aire con esfuerzos diarios? Conozca el impacto de la obesidad y cómo la cirugía bariátrica devuelve la vitalidad.",
@@ -165,7 +165,7 @@ export const symptoms: Symptom[] = [
     ],
     whyConsult: "Debe ser valorado a la brevedad si la dificultad para tragar progresa de alimentos sólidos a líquidos, si experimenta dolor constante al comer, o si tiene episodios frecuentes de regurgitación de comida no digerida.",
     relatedConditions: ["reflujo-y-hernia-hiatal", "reganancia-de-peso-bariatrica"],
-    image: "/images/symptoms/dificultad-tragar.jpg",
+    image: "/sintomas/dificultad-tragar.png",
     seo: {
       title: "Dificultad para Tragar (Disfagia) en CDMX | Dr. David",
       description: "¿Siente que la comida se le atora en el pecho? Conozca las causas de la disfagia asociadas a hernia hiatal y reflujo en la CDMX.",
@@ -184,7 +184,7 @@ export const symptoms: Symptom[] = [
     ],
     whyConsult: "Este es un síntoma de alarma grave. Debe acudir inmediatamente a urgencias o contactar a su cirujano si presenta cualquier tipo de sangrado digestivo, especialmente si se acompaña de mareo, sudoración fría o debilidad extrema.",
     relatedConditions: ["reflujo-y-hernia-hiatal", "reganancia-de-peso-bariatrica", "apendicitis-aguda"],
-    image: "/images/symptoms/sangrado-digestivo.jpg",
+    image: "/sintomas/sangrado-digestivo.png",
     seo: {
       title: "Sangrado Digestivo y Úlceras CDMX | Dr. David Hernández",
       description: "Presencia de sangre en vómito o evacuaciones. Conozca las causas graves como úlceras gástricas y el tratamiento de urgencia en la CDMX.",

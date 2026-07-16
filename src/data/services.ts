@@ -30,7 +30,7 @@ export const services: MedicalService[] = [
       "Financiamiento": "Meses con intereses fijos y diferidos desde 6 a 24 meses únicamente con Mend Pay"
     },
     relatedConditions: ["obesidad-clinica", "reganancia-de-peso-bariatrica", "reflujo-y-hernia-hiatal", "piedras-en-la-vesicula", "hernias-abdominales"],
-    image: "/images/services/consulta.jpg",
+    image: "/servicios/consulta.png",
     seo: {
       title: "Consulta de Cirugía General y Bariátrica CDMX | Dr. David Hernández",
       description: "Agende su consulta de valoración inicial por obesidad, reflujo o hernias en Roma Norte y Polanco. Costo: $1,100 MXN.",
@@ -65,7 +65,7 @@ export const services: MedicalService[] = [
       "Frecuencia sugerida": "Según indicación quirúrgica (típicamente a los 7 días, 1 mes y 3 meses post-cirugía)"
     },
     relatedConditions: ["obesidad-clinica", "reganancia-de-peso-bariatrica", "reflujo-y-hernia-hiatal", "piedras-en-la-vesicula", "hernias-abdominales"],
-    image: "/images/services/consulta-seguimiento.jpg",
+    image: "/servicios/consulta.png",
     seo: {
       title: "Consulta Subsecuente y Control Postoperatorio | Dr. David Hernández",
       description: "Seguimiento médico estrecho para pacientes operados de manga, bypass, vesícula o hernias. Consulta en Roma Norte y Polanco.",
@@ -99,7 +99,7 @@ export const services: MedicalService[] = [
       "Especialidad": "Cirugía de revisión bariátrica y hernias complejas"
     },
     relatedConditions: ["reganancia-de-peso-bariatrica", "hernias-abdominales", "reflujo-y-hernia-hiatal", "nodulos-tiroideos"],
-    image: "/images/services/segunda-opinion.jpg",
+    image: "/servicios/consulta.png",
     seo: {
       title: "Segunda Opinión Médica en Cirugía y Bariometría CDMX",
       description: "Tome decisiones seguras sobre su salud. Consulta de segunda opinión por cirugía de hernias, vesícula o bariátrica con el Dr. David Hernández.",
@@ -133,7 +133,7 @@ export const services: MedicalService[] = [
       "Requisito": "Envío previo de estudios en formato PDF o imagen"
     },
     relatedConditions: ["obesidad-clinica", "reganancia-de-peso-bariatrica", "reflujo-y-hernia-hiatal", "piedras-en-la-vesicula"],
-    image: "/images/services/consulta-virtual.jpg",
+    image: "/servicios/consulta.png",
     seo: {
       title: "Consulta en Línea (Telemedicina) Cirugía General | Dr. David",
       description: "Consulta médica online con el Dr. David Ernesto Hernández Torres. Revisión de estudios y pre-valoración bariátrica a distancia. Costo: $800 MXN.",
@@ -171,7 +171,7 @@ export const services: MedicalService[] = [
       "Estancia": "1 a 2 noches de hospitalización para control médico inicial"
     },
     relatedConditions: ["obesidad-clinica", "reganancia-de-peso-bariatrica"],
-    image: "/images/services/manga-gastrica.jpg",
+    image: "/servicios/manga-gastrica.png",
     seo: {
       title: "Manga Gástrica y Bypass Gástrico en CDMX | Dr. David Hernández",
       description: "Cirugía para perder peso y controlar la diabetes en la CDMX. Manga y bypass gástrico laparoscópico con el Dr. David Ernesto Hernández Torres.",
@@ -206,7 +206,7 @@ export const services: MedicalService[] = [
       "Estancia hospitalaria": "Ambulatoria o 1 noche de hospitalización para control analgésico"
     },
     relatedConditions: ["piedras-en-la-vesicula"],
-    image: "/images/services/vesicula.jpg",
+    image: "/servicios/vesicula.png",
     seo: {
       title: "Cirugía de Vesícula Laparoscópica CDMX | Dr. David Hernández",
       description: "Evite la pancreatitis. Operación de vesícula biliar por laparoscopia en Roma Norte y Polanco con el Dr. David Ernesto Hernández Torres.",
@@ -242,7 +242,7 @@ export const services: MedicalService[] = [
       "Fijación de malla": "Tachuelas absorbibles o sutura interna"
     },
     relatedConditions: ["hernias-abdominales"],
-    image: "/images/services/hernias.jpg",
+    image: "/servicios/hernias.png",
     seo: {
       title: "Reparación de Hernia Inguinal y Umbilical CDMX | Dr. David",
       description: "Cirugía de hernia con malla por laparoscopia. Elimine el bulto y el dolor de forma definitiva con el Dr. David Ernesto Hernández Torres.",
@@ -277,7 +277,7 @@ export const services: MedicalService[] = [
       "Cierre de hiato": "Sutura con material no absorbible de alta resistencia"
     },
     relatedConditions: ["reflujo-y-hernia-hiatal"],
-    image: "/images/services/cirugia-reflujo.jpg",
+    image: "/servicios/cirugia-reflujo.png",
     seo: {
       title: "Cirugía de Hernia Hiatal y Reflujo CDMX | Dr. David Hernández",
       description: "Tratamiento definitivo para el reflujo crónico y la hernia hiatal por laparoscopia. Agende su consulta en Roma Norte y Polanco.",
