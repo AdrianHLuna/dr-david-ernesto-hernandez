@@ -65,11 +65,11 @@ export default function Home() {
       {/* 1. ASYMMETRICAL BENTO HERO */}
       <section className="relative min-h-[calc(100vh-80px)] flex items-center pt-16 pb-20">
         <div className="container mx-auto px-6 max-w-7xl">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             
-            {/* Left: Premium Profile Panel */}
+            {/* Left: Copy + CTAs */}
             <motion.div 
-              className="lg:col-span-7 space-y-8 text-center lg:text-left" 
+              className="lg:col-span-5 space-y-8 text-center lg:text-left order-2 lg:order-1" 
               initial="hidden" 
               animate="visible" 
               variants={fadeUp}
@@ -79,18 +79,31 @@ export default function Home() {
                 {doctor.specialty}
               </div>
               
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-slate-900 leading-tight tracking-tight font-serif">
+              <h1 className="text-4xl sm:text-5xl lg:text-5xl font-black text-slate-900 leading-tight tracking-tight font-serif">
                 Cirugía Bariátrica y Digestiva <br />
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-teal-600">
                   Segura y de Mínima Invasión.
                 </span>
               </h1>
               
-              <p className="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto lg:mx-0 leading-relaxed font-light">
+              <p className="text-base sm:text-lg text-slate-600 max-w-xl mx-auto lg:mx-0 leading-relaxed font-light">
                 Tratamientos especializados para combatir la obesidad, corregir hernias complejas y erradicar el reflujo gastroesofágico bajo los más altos estándares de calidad internacional en la Ciudad de México.
               </p>
               
-              <div className="flex flex-col sm:flex-row justify-center lg:justify-start gap-4 pt-4">
+              {/* Credential badges */}
+              <div className="flex flex-wrap justify-center lg:justify-start gap-3">
+                <span className="inline-flex items-center gap-1.5 text-[10px] bg-slate-100 text-slate-700 px-3 py-1.5 rounded-full font-bold uppercase tracking-wider border border-slate-200">
+                  <FaCertificate className="text-emerald-600" size={10} /> Certificado CMCG
+                </span>
+                <span className="inline-flex items-center gap-1.5 text-[10px] bg-slate-100 text-slate-700 px-3 py-1.5 rounded-full font-bold uppercase tracking-wider border border-slate-200">
+                  <FaShieldAlt className="text-emerald-600" size={10} /> Cirugía de Alta Gama
+                </span>
+                <span className="inline-flex items-center gap-1.5 text-[10px] bg-slate-100 text-slate-700 px-3 py-1.5 rounded-full font-bold uppercase tracking-wider border border-slate-200">
+                  <FaMoneyBillWave className="text-emerald-600" size={10} /> Financiamiento Mend Pay
+                </span>
+              </div>
+
+              <div className="flex flex-col sm:flex-row justify-center lg:justify-start gap-4 pt-2">
                 <a 
                   href={whatsappUrl} 
                   target="_blank" 
@@ -108,46 +121,49 @@ export default function Home() {
               </div>
             </motion.div>
 
-            {/* Right: Bento Grid Cards */}
-            <motion.div 
-              className="lg:col-span-5 grid grid-cols-1 sm:grid-cols-2 gap-4"
-              initial={{ opacity: 0, scale: 0.95 }}
+            {/* Right: Large Doctor Photo */}
+            <motion.div
+              className="lg:col-span-7 order-1 lg:order-2 relative"
+              initial={{ opacity: 0, scale: 0.97 }}
               animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.6, delay: 0.15 }}
+              transition={{ duration: 0.7, delay: 0.1 }}
             >
-              {/* Card 1: Bariatrics */}
-              <div className="sm:col-span-2 p-6 rounded-3xl bg-gradient-to-br from-emerald-50/60 to-white border border-emerald-500/10 shadow-md flex flex-col justify-between min-h-[180px] group hover:border-emerald-500/30 transition-colors">
-                <div className="flex justify-between items-start">
-                  <div className="w-10 h-10 rounded-xl bg-emerald-500/10 flex items-center justify-center text-emerald-600">
-                    <FaHeartbeat size={20} />
+              {/* Photo container — tall portrait aspect, rounded edges */}
+              <div className="relative w-full rounded-3xl overflow-hidden bg-gradient-to-br from-slate-100 to-emerald-50/30 border border-slate-200 shadow-2xl shadow-slate-200/60"
+                style={{ minHeight: "580px" }}
+              >
+                <img
+                  src="/doctor.jpg"
+                  alt={`${doctor.title} ${doctor.name} — Cirujano Bariátrico y General en CDMX`}
+                  className="w-full h-full object-cover object-top"
+                  style={{ minHeight: "580px" }}
+                  onError={(e) => {
+                    (e.currentTarget as HTMLImageElement).style.display = "none";
+                  }}
+                />
+
+                {/* Gradient overlay at bottom for the info cards */}
+                <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-slate-900/80 via-slate-900/30 to-transparent p-6 pt-24">
+                  <div className="grid grid-cols-3 gap-3">
+                    <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-4 text-center">
+                      <p className="text-2xl font-extrabold text-white font-serif">+1,000</p>
+                      <p className="text-[9px] text-white/80 uppercase tracking-widest font-bold mt-0.5">Pacientes</p>
+                    </div>
+                    <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-4 text-center">
+                      <p className="text-2xl font-extrabold text-white font-serif">CMCG</p>
+                      <p className="text-[9px] text-white/80 uppercase tracking-widest font-bold mt-0.5">Certificado</p>
+                    </div>
+                    <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-4 text-center">
+                      <p className="text-2xl font-extrabold text-white font-serif">2</p>
+                      <p className="text-[9px] text-white/80 uppercase tracking-widest font-bold mt-0.5">Sedes CDMX</p>
+                    </div>
                   </div>
-                  <span className="text-[10px] bg-emerald-500/10 text-emerald-600 px-2.5 py-1 rounded-full font-bold uppercase tracking-wider">Alta Gama</span>
                 </div>
-                <div>
-                  <h3 className="text-lg font-bold text-slate-900 mb-1">Manga y Bypass Gástrico</h3>
-                  <p className="text-xs text-slate-500 font-light">Abordaje laparoscópico avanzado para remisión metabólica.</p>
-                </div>
-              </div>
 
-              {/* Card 2: Certification */}
-              <div className="p-6 rounded-3xl bg-white border border-slate-200 shadow-md flex flex-col justify-between min-h-[150px] hover:border-emerald-500/20 transition-colors">
-                <div className="w-10 h-10 rounded-xl bg-emerald-500/10 flex items-center justify-center text-emerald-600">
-                  <FaCertificate size={18} />
-                </div>
-                <div>
-                  <h4 className="text-sm font-bold text-slate-900 mb-1">Certificado CMCG</h4>
-                  <p className="text-[11px] text-slate-500">Garantía y aval del Consejo Mexicano de Cirugía.</p>
-                </div>
-              </div>
-
-              {/* Card 3: Mend Pay */}
-              <div className="p-6 rounded-3xl bg-white border border-slate-200 shadow-md flex flex-col justify-between min-h-[150px] hover:border-emerald-500/20 transition-colors">
-                <div className="w-10 h-10 rounded-xl bg-emerald-500/10 flex items-center justify-center text-emerald-600">
-                  <FaMoneyBillWave size={18} />
-                </div>
-                <div>
-                  <h4 className="text-sm font-bold text-slate-900 mb-1">Financiamiento</h4>
-                  <p className="text-[11px] text-slate-500">6 a 24 meses con Mend Pay.</p>
+                {/* Floating name badge */}
+                <div className="absolute top-6 left-6 bg-white/90 backdrop-blur-md rounded-2xl px-4 py-3 border border-white/60 shadow-lg">
+                  <p className="text-xs font-black text-slate-900 uppercase tracking-wider">{doctor.title} {doctor.name}</p>
+                  <p className="text-[10px] text-emerald-600 font-bold uppercase tracking-widest">{doctor.subspecialty}</p>
                 </div>
               </div>
             </motion.div>
@@ -183,29 +199,43 @@ export default function Home() {
       {/* 3. BIO & TRUST GRID */}
       <section className="py-24 bg-white">
         <div className="container mx-auto px-6 max-w-7xl">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
             
-            {/* Left: Philosophy box */}
+            {/* Left: Doctor Photo + Philosophy overlay */}
             <div className="lg:col-span-5">
-              <div className="sticky top-32 p-8 sm:p-12 rounded-3xl bg-slate-50/50 border border-slate-200 flex flex-col justify-between h-auto shadow-sm">
-                <span className="text-[10px] font-bold text-emerald-600 uppercase tracking-widest mb-6 block">Filosofía del Especialista</span>
-                <p className="text-xl sm:text-2xl font-serif text-slate-800 italic leading-relaxed mb-8">
-                  "{doctor.philosophy}"
-                </p>
-                <div className="h-[1px] w-12 bg-emerald-600 mb-8" />
-                <div>
-                  <h4 className="font-bold text-slate-900 text-sm uppercase tracking-wider mb-1">{doctor.title} {doctor.name}</h4>
-                  <p className="text-xs text-slate-500 uppercase tracking-widest">{doctor.subspecialty}</p>
+              <div className="sticky top-24 relative rounded-3xl overflow-hidden shadow-2xl shadow-slate-200/70 border border-slate-200" style={{ minHeight: "600px" }}>
+                {/* Doctor photo */}
+                <img
+                  src="/doctor.jpg"
+                  alt={`${doctor.title} ${doctor.name}`}
+                  className="w-full h-full object-cover object-top absolute inset-0"
+                  style={{ minHeight: "600px" }}
+                />
+                {/* Soft gradient top */}
+                <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-slate-900/75" />
+
+                {/* Philosophy quote overlay at bottom */}
+                <div className="absolute inset-x-0 bottom-0 p-8">
+                  <span className="text-[10px] font-bold text-emerald-400 uppercase tracking-widest mb-3 block">Filosofía del Especialista</span>
+                  <p className="text-base sm:text-lg font-serif text-white italic leading-relaxed mb-5">
+                    &ldquo;{doctor.philosophy}&rdquo;
+                  </p>
+                  <div className="h-px w-10 bg-emerald-500 mb-4" />
+                  <div>
+                    <h4 className="font-black text-white text-sm uppercase tracking-wider">{doctor.title} {doctor.name}</h4>
+                    <p className="text-[10px] text-emerald-400 font-bold uppercase tracking-widest">{doctor.subspecialty}</p>
+                  </div>
                 </div>
               </div>
             </div>
 
             {/* Right: Academic Bento grid */}
-            <div className="lg:col-span-7 space-y-10 flex flex-col justify-center">
+            <div className="lg:col-span-7 space-y-10 flex flex-col justify-center pt-0 lg:pt-8">
               <div className="space-y-4">
-                <h3 className="text-3xl font-serif text-slate-900 font-bold flex items-center gap-3">
-                  <span className="h-2 w-2 bg-emerald-600 rounded-full" /> Trayectoria Profesional
-                </h3>
+                <span className="text-[10px] font-bold text-emerald-600 uppercase tracking-widest block">Sobre el Especialista</span>
+                <h2 className="text-3xl font-serif text-slate-900 font-bold flex items-center gap-3">
+                  <span className="h-2 w-2 bg-emerald-600 rounded-full flex-shrink-0" /> Trayectoria Profesional
+                </h2>
                 <p className="text-slate-600 font-light leading-relaxed text-sm sm:text-base">
                   {doctor.bio}
                 </p>
@@ -227,6 +257,92 @@ export default function Home() {
                     Certificado vigente por el Consejo Mexicano de Cirugía General (CMCG) y miembro del Colegio Mexicano de Cirugía para la Obesidad y Enfermedades Metabólicas (CMCOEM).
                   </p>
                 </div>
+
+                <div className="sm:col-span-2 p-8 rounded-2xl border border-emerald-500/20 bg-gradient-to-br from-emerald-50/50 to-white hover:shadow-md transition-all">
+                  <FaUserShield className="text-emerald-600 text-3xl mb-4" />
+                  <h4 className="font-bold text-slate-900 text-sm uppercase tracking-widest mb-2">Compromiso con el Paciente</h4>
+                  <p className="text-xs text-slate-500 font-light leading-relaxed">
+                    Cada paciente recibe una valoración médica personalizada, con un plan de tratamiento basado en evidencia científica actualizada, comunicación transparente y acompañamiento integral antes, durante y después del procedimiento.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      {/* 4. SYMPTOMS SECTION */}
+      <section className="py-24 bg-slate-50 border-t border-slate-200">
+        <div className="container mx-auto px-6 max-w-7xl">
+          <div className="text-center mb-16">
+            <span className="text-[10px] font-bold text-emerald-600 uppercase tracking-widest mb-3 block">Identifica tus Síntomas</span>
+            <h2 className="text-4xl font-serif text-slate-900 mb-4 font-bold">Síntomas de Alerta</h2>
+            <p className="text-slate-500 max-w-2xl mx-auto font-light text-sm">
+              Prestar atención a estas señales del cuerpo es fundamental para prevenir complicaciones y obtener una guía médica oportuna.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {symptoms.slice(0, 5).map(sym => {
+              const severity = sym.slug.includes("dolor-abdominal") || sym.slug.includes("dolor-agudo") || sym.slug.includes("abultamiento")
+                ? { label: "Urgencia Alta", style: "bg-rose-500/10 text-rose-600 border-rose-500/20" }
+                : { label: "Valoración Clínica", style: "bg-emerald-500/10 text-emerald-600 border-emerald-500/20" };
+
+              return (
+                <div 
+                  key={sym.id} 
+                  className="bg-white rounded-3xl overflow-hidden border border-slate-200 hover:border-emerald-500/20 hover:shadow-xl transition-all duration-300 flex flex-col justify-between group"
+                >
+                  <div>
+                    <div className="relative aspect-video w-full overflow-hidden bg-slate-100 mb-6">
+                      <img 
+                        src={sym.image} 
+                        alt={sym.name}
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 absolute inset-0"
+                        loading="lazy"
+                      />
+                      <div className="absolute top-4 left-4">
+                        <span className={`text-[9px] px-3 py-1 rounded-full font-bold uppercase tracking-wider border bg-white/95 backdrop-blur-sm shadow-sm ${severity.style}`}>
+                          {severity.label}
+                        </span>
+                      </div>
+                    </div>
+                    <div className="px-8 pt-2">
+                      <h3 className="text-xl font-bold text-slate-900 mb-3 font-serif group-hover:text-emerald-600 transition-colors line-clamp-2">{sym.name}</h3>
+                      <p className="text-slate-500 text-xs leading-relaxed font-light mb-6 line-clamp-3">
+                        {sym.description}
+                      </p>
+                    </div>
+                  </div>
+                  <div className="px-8 pb-8">
+                    <Link 
+                      href={`/sintomas/${sym.slug}`} 
+                      className="text-emerald-600 font-bold font-mono text-[10px] uppercase tracking-wider flex items-center gap-2 group-hover:text-slate-900 transition-colors"
+                    >
+                      Saber Más <FaArrowRight size={8} className="group-hover:translate-x-1 transition-transform" />
+                    </Link>
+                  </div>
+                </div>
+              );
+            })}
+
+            {/* View all symptoms card */}
+            <div className="bg-gradient-to-br from-emerald-600 to-teal-700 rounded-3xl p-8 text-white flex flex-col justify-between shadow-md group hover:shadow-xl transition-all duration-300 min-h-[300px]">
+              <div>
+                <span className="text-[10px] font-bold text-emerald-200 uppercase tracking-widest block mb-4">¿Presentas otras molestias?</span>
+                <h3 className="text-2xl font-serif font-bold text-white mb-4 leading-snug">Explora el Directorio Completo de Síntomas</h3>
+                <p className="text-xs text-emerald-50/90 font-light leading-relaxed">
+                  Contamos con información detallada de causas, alertas e indicaciones médicas para cada molestia digestiva o abdominal.
+                </p>
+              </div>
+              <div>
+                <Link 
+                  href="/sintomas" 
+                  className="w-full flex items-center justify-center gap-3 bg-white text-emerald-950 font-bold py-4 rounded-2xl hover:scale-105 hover:bg-slate-50 transition-all shadow-md text-xs uppercase tracking-wider"
+                >
+                  Ver Todos los Síntomas <FaArrowRight size={10} />
+                </Link>
               </div>
             </div>
 
@@ -246,25 +362,57 @@ export default function Home() {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {diseases.map(disease => (
+            {diseases.slice(0, 5).map(disease => (
               <div 
                 key={disease.id} 
-                className="bg-white rounded-3xl p-8 border border-slate-200 hover:border-emerald-500/20 hover:shadow-xl transition-all duration-300 flex flex-col justify-between group"
+                className="bg-white rounded-3xl overflow-hidden border border-slate-200 hover:border-emerald-500/20 hover:shadow-xl transition-all duration-300 flex flex-col justify-between group"
               >
                 <div>
-                  <h3 className="text-xl font-bold text-slate-900 mb-3 font-serif group-hover:text-emerald-600 transition-colors">{disease.name}</h3>
-                  <p className="text-slate-500 text-xs leading-relaxed font-light mb-6">
-                    {disease.description.substring(0, 140)}...
-                  </p>
+                  <div className="relative aspect-video w-full overflow-hidden bg-slate-100 mb-6">
+                    <img 
+                      src={disease.image} 
+                      alt={disease.name}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 absolute inset-0"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div className="px-8 pt-2">
+                    <h3 className="text-xl font-bold text-slate-900 mb-3 font-serif group-hover:text-emerald-600 transition-colors line-clamp-2">{disease.name}</h3>
+                    <p className="text-slate-500 text-xs leading-relaxed font-light mb-6">
+                      {disease.description.substring(0, 140)}...
+                    </p>
+                  </div>
                 </div>
-                <Link 
-                  href={`/enfermedades/${disease.slug}`} 
-                  className="text-emerald-600 font-bold font-mono text-[10px] uppercase tracking-wider flex items-center gap-2 group-hover:text-slate-900 transition-colors"
-                >
-                  Leer Más <FaArrowRight size={8} className="group-hover:translate-x-1 transition-transform" />
-                </Link>
+                <div className="px-8 pb-8">
+                  <Link 
+                    href={`/enfermedades/${disease.slug}`} 
+                    className="text-emerald-600 font-bold font-mono text-[10px] uppercase tracking-wider flex items-center gap-2 group-hover:text-slate-900 transition-colors"
+                  >
+                    Leer Más <FaArrowRight size={8} className="group-hover:translate-x-1 transition-transform" />
+                  </Link>
+                </div>
               </div>
             ))}
+
+            {/* View all diseases card */}
+            <div className="bg-gradient-to-br from-slate-800 to-slate-900 rounded-3xl p-8 text-white flex flex-col justify-between shadow-md group hover:shadow-xl transition-all duration-300 min-h-[300px]">
+              <div>
+                <span className="text-[10px] font-bold text-slate-350 uppercase tracking-widest block mb-4">Enfoque de especialidad</span>
+                <h3 className="text-2xl font-serif font-bold text-white mb-4 leading-snug">Conoce Todos los Padecimientos</h3>
+                <p className="text-xs text-slate-300 font-light leading-relaxed">
+                  Ofrecemos atención médica oportuna y tratamientos laparoscópicos avanzados para una gran variedad de patologías generales y metabólicas.
+                </p>
+              </div>
+              <div>
+                <Link 
+                  href="/enfermedades" 
+                  className="w-full flex items-center justify-center gap-3 bg-white text-slate-900 font-bold py-4 rounded-2xl hover:scale-105 hover:bg-slate-50 transition-all shadow-md text-xs uppercase tracking-wider"
+                >
+                  Ver Todas las Enfermedades <FaArrowRight size={10} />
+                </Link>
+              </div>
+            </div>
+
           </div>
         </div>
       </section>
@@ -281,29 +429,126 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
-            {services.map(service => (
+            {services.slice(0, 5).map(service => (
               <div 
                 key={service.id} 
-                className="bg-white rounded-3xl p-8 border border-slate-200 hover:border-emerald-500/20 transition-all duration-300 flex flex-col justify-between"
+                className="bg-white rounded-3xl overflow-hidden border border-slate-200 hover:border-emerald-500/20 hover:shadow-xl transition-all duration-300 flex flex-col justify-between group"
               >
                 <div>
-                  <div className="flex justify-between items-start mb-4">
-                    <span className="text-[9px] bg-slate-100 text-slate-600 px-2.5 py-1 rounded-full font-bold uppercase tracking-wider">{service.type}</span>
-                    <span className="text-emerald-600 font-bold font-mono text-xs">{service.priceRange}</span>
+                  <div className="relative aspect-video w-full overflow-hidden bg-slate-100">
+                    <img 
+                      src={service.image} 
+                      alt={service.name}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 absolute inset-0"
+                      loading="lazy"
+                    />
                   </div>
-                  <h3 className="text-lg font-bold text-slate-900 mb-2">{service.name}</h3>
-                  <p className="text-slate-500 text-xs font-light leading-relaxed mb-6">
-                    {service.description}
-                  </p>
+                  <div className="p-8">
+                    <div className="mb-4">
+                      <span className="text-[9px] bg-slate-100 text-slate-600 px-2.5 py-1 rounded-full font-bold uppercase tracking-wider">{service.type}</span>
+                    </div>
+                    <h3 className="text-lg font-bold text-slate-900 mb-2 line-clamp-1">{service.name}</h3>
+                    <p className="text-slate-500 text-xs font-light leading-relaxed line-clamp-2">
+                      {service.description}
+                    </p>
+                  </div>
                 </div>
-                <Link 
-                  href={`/servicios/${service.slug}`} 
-                  className="text-slate-800 text-xs font-bold py-3 px-6 bg-slate-50 border border-slate-200 hover:border-emerald-500/20 hover:bg-slate-100 text-center rounded-xl transition-all"
-                >
-                  Detalles del Procedimiento
-                </Link>
+                <div className="px-8 pb-8">
+                  <Link 
+                    href={`/servicios/${service.slug}`} 
+                    className="text-slate-800 text-xs font-bold py-3 px-6 bg-slate-50 border border-slate-200 hover:border-emerald-500/20 hover:bg-slate-100 text-center rounded-xl transition-all block w-full"
+                  >
+                    Detalles del Procedimiento
+                  </Link>
+                </div>
               </div>
             ))}
+
+            {/* View all services card */}
+            <div className="bg-gradient-to-br from-emerald-50/50 to-white rounded-3xl p-8 border border-slate-200 hover:border-emerald-500/20 transition-all duration-300 flex flex-col justify-between group min-h-[280px]">
+              <div>
+                <span className="text-[9px] bg-emerald-500/10 text-emerald-600 px-2.5 py-1 rounded-full font-bold uppercase tracking-wider inline-block mb-4 font-bold">Portafolio Quirúrgico</span>
+                <h3 className="text-lg font-bold text-slate-900 mb-2 font-serif">¿Buscas otro procedimiento?</h3>
+                <p className="text-slate-500 text-xs font-light leading-relaxed mb-6">
+                  Conoce toda nuestra gama de procedimientos quirúrgicos generales, bariátricos y de mínima invasión.
+                </p>
+              </div>
+              <Link 
+                href="/servicios" 
+                className="text-white text-xs font-bold py-4 px-6 bg-emerald-600 hover:bg-emerald-500 text-center rounded-xl transition-all block w-full shadow-md"
+              >
+                Ver Todos los Servicios &rarr;
+              </Link>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      {/* 6.5 PRICE, PAYMENTS & INSURANCES SECTION */}
+      <section className="py-24 bg-white border-t border-slate-200">
+        <div className="container mx-auto px-6 max-w-7xl">
+          <div className="text-center mb-16">
+            <span className="text-[10px] font-bold text-emerald-600 uppercase tracking-widest mb-3 block">Costos y Financiamiento</span>
+            <h2 className="text-4xl font-serif text-slate-900 mb-4 font-bold">Consulta y Métodos de Pago</h2>
+            <p className="text-slate-500 max-w-2xl mx-auto font-light text-sm">
+              Transparencia y facilidades para tu atención médica en la Ciudad de México.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 max-w-6xl mx-auto">
+            
+            {/* Box 1: Consulta Price */}
+            <div className="lg:col-span-4 bg-slate-50 border border-slate-200 rounded-3xl p-8 flex flex-col justify-between hover:border-emerald-500/20 transition-all shadow-sm group">
+              <div>
+                <span className="text-[10px] font-bold text-emerald-600 uppercase tracking-widest block mb-4">Costo de Consulta</span>
+                <h3 className="text-2xl font-serif font-bold text-slate-900 mb-2">Valoración Especializada</h3>
+                <p className="text-xs text-slate-500 font-light leading-relaxed mb-6">
+                  Consulta médica inicial detallada de cirugía general y bariatría (manga gástrica, bypass gástrico, reflujo y hernias).
+                </p>
+              </div>
+              <div>
+                <p className="text-4xl font-extrabold text-slate-900 font-mono">${doctor.consultationPrice} <span className="text-sm font-normal text-slate-500">MXN</span></p>
+                <p className="text-[10px] text-slate-400 font-light mt-1">* Sujeto a disponibilidad de agenda.</p>
+              </div>
+            </div>
+
+            {/* Box 2: Payment Methods */}
+            <div className="lg:col-span-4 bg-slate-50 border border-slate-200 rounded-3xl p-8 flex flex-col justify-between hover:border-emerald-500/20 transition-all shadow-sm">
+              <div>
+                <span className="text-[10px] font-bold text-emerald-600 uppercase tracking-widest block mb-4">Métodos de Pago</span>
+                <h3 className="text-2xl font-serif font-bold text-slate-900 mb-4">Facilidades de Pago</h3>
+                <ul className="space-y-3.5">
+                  {doctor.paymentMethods.map(method => (
+                    <li key={method} className="flex items-center gap-3 text-xs text-slate-600 font-light">
+                      <FaCheckCircle className="text-emerald-600 flex-shrink-0" size={14} />
+                      {method}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div className="border-t border-slate-200/60 pt-4 mt-6">
+                <p className="text-[10px] text-slate-400 font-light">Aceptamos pagos contactless (NFC) y todas las tarjetas bancarias.</p>
+              </div>
+            </div>
+
+            {/* Box 3: Insurances */}
+            <div className="lg:col-span-4 bg-gradient-to-br from-emerald-600 to-teal-700 border border-emerald-500/20 text-white rounded-3xl p-8 flex flex-col justify-between shadow-md">
+              <div>
+                <span className="text-[10px] font-bold text-slate-200 uppercase tracking-widest block mb-4">Seguros Médicos</span>
+                <h3 className="text-2xl font-serif font-bold text-white mb-3">Convenios y Aseguradoras</h3>
+                <p className="text-xs text-emerald-50/95 font-light leading-relaxed mb-6">
+                  Aceptamos todas las pólizas de gastos médicos mayores nacionales e internacionales. Te apoyamos en todo el trámite administrativo para Pago Directo o Reembolso de tu cirugía.
+                </p>
+                <div className="bg-white/10 rounded-2xl p-4 border border-white/10 text-xs font-medium text-emerald-50 leading-normal">
+                  {doctor.insurances?.[0] || "Todos los seguros médicos nacionales e internacionales."}
+                </div>
+              </div>
+              <div className="border-t border-white/15 pt-4 mt-6">
+                <p className="text-[10px] text-emerald-200/80 font-light">Consulte con su asesor de seguros antes del procedimiento.</p>
+              </div>
+            </div>
+
           </div>
         </div>
       </section>

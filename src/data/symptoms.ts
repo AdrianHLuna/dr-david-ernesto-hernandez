@@ -114,5 +114,81 @@ export const symptoms: Symptom[] = [
       description: "Vómitos o intolerancia tras manga o bypass. Diagnóstico y cirugía de revisión con el Dr. David Ernesto Hernández Torres.",
       keywords: ["vomito despues de manga gastrica", "intolerancia alimentaria bypass", "reflujo postbariatrico", "cirugia de revision cdmx"]
     }
+  },
+  {
+    id: "dh-sym-007",
+    slug: "hambre-frecuente-falta-saciedad",
+    name: "Hambre frecuente o falta de saciedad",
+    description: "Tener hambre constantemente, dificultad para controlar las porciones de comida o experimentar muy poca sensación de saciedad tras comer son síntomas de alteraciones metabólicas asociadas al exceso de peso. También se observan en pacientes bariátricos cuando el reservorio gástrico se ha dilatado o hay desbalances hormonales.",
+    causes: [
+      "Alteraciones en las hormonas del apetito (grelina y leptina).",
+      "Dilatación progresiva de la capacidad del estómago residual.",
+      "Resistencia a la insulina y fluctuaciones drásticas de glucosa."
+    ],
+    whyConsult: "Se recomienda acudir a consulta si experimenta ansiedad por comer constantemente o si ha perdido la capacidad de sentirse satisfecho, requiriendo un abordaje médico-metabólico o la valoración de una revisión bariátrica.",
+    relatedConditions: ["obesidad-clinica", "reganancia-de-peso-bariatrica"],
+    image: "/images/symptoms/hambre-frecuente.jpg",
+    seo: {
+      title: "Hambre Frecuente y Ansiedad por Comer CDMX | Dr. David",
+      description: "Entienda por qué no siente saciedad al comer y cómo tratar la ansiedad por la comida desde un enfoque médico y bariátrico en la CDMX.",
+      keywords: ["hambre constante causas", "ansiedad por comer doctor", "no me lleno al comer", "cirugía bariátrica y saciedad"]
+    }
+  },
+  {
+    id: "dh-sym-008",
+    slug: "cansancio-falta-aire",
+    name: "Cansancio o falta de aire al hacer esfuerzo",
+    description: "La fatiga crónica, falta de aire (disnea) al realizar esfuerzos leves de la vida diaria o la limitación física severa son consecuencias directas de la sobrecarga del organismo debido al exceso de peso corporal. Frecuentemente se asocian a problemas de oxigenación durante la noche (apnea del sueño) y a sobreesfuerzo cardiovascular.",
+    causes: [
+      "Sobrecarga mecánica en pulmones y diafragma por exceso de grasa visceral.",
+      "Apnea obstructiva del sueño que impide un descanso reparador nocturno.",
+      "Descondicionamiento físico severo y esfuerzo cardiovascular incrementado."
+    ],
+    whyConsult: "Consulte con un especialista si experimenta cansancio extremo sin causa aparente, ronquidos intensos con pausas respiratorias al dormir o si le falta el aire al caminar tramos cortos.",
+    relatedConditions: ["obesidad-clinica"],
+    image: "/images/symptoms/cansancio.jpg",
+    seo: {
+      title: "Fatiga y Falta de Aire por Obesidad CDMX | Dr. David Hernández",
+      description: "¿Siente cansancio constante o le falta el aire con esfuerzos diarios? Conozca el impacto de la obesidad y cómo la cirugía bariátrica devuelve la vitalidad.",
+      keywords: ["cansancio crónico por obesidad", "falta de aire al caminar", "apnea del sueño síntomas", "mejorar vitalidad cirugía bariátrica"]
+    }
+  },
+  {
+    id: "dh-sym-009",
+    slug: "dificultad-pasar-alimentos",
+    name: "Dificultad para pasar los alimentos (Disfagia)",
+    description: "La sensación de que los alimentos se atoran en la garganta o el pecho, dolor al deglutir o la necesidad de tomar agua constantemente para poder tragar son síntomas que sugieren una alteración mecánica o motora. Puede ser causada por una hernia hiatal grande que comprime el esófago, esofagitis severa por reflujo, o estrechamiento tras una cirugía gástrica previa.",
+    causes: [
+      "Estrechamiento (estenosis) de la luz del esófago o de la unión bariátrica.",
+      "Espasmo o inflamación esofágica severa por reflujo ácido constante.",
+      "Hernia hiatal grande que altera la posición anatómica del esófago."
+    ],
+    whyConsult: "Debe ser valorado a la brevedad si la dificultad para tragar progresa de alimentos sólidos a líquidos, si experimenta dolor constante al comer, o si tiene episodios frecuentes de regurgitación de comida no digerida.",
+    relatedConditions: ["reflujo-y-hernia-hiatal", "reganancia-de-peso-bariatrica"],
+    image: "/images/symptoms/dificultad-tragar.jpg",
+    seo: {
+      title: "Dificultad para Tragar (Disfagia) en CDMX | Dr. David",
+      description: "¿Siente que la comida se le atora en el pecho? Conozca las causas de la disfagia asociadas a hernia hiatal y reflujo en la CDMX.",
+      keywords: ["dificultad para tragar comida", "comida atorada en el pecho", "esófago inflamado reflujo", "cirujano general hernia hiatal"]
+    }
+  },
+  {
+    id: "dh-sym-010",
+    slug: "sangrado-digestivo",
+    name: "Evacuaciones o vómito con sangre",
+    description: "La presencia de sangre roja brillante o material oscuro similar a 'posos de café' en el vómito, o la evacuación de heces negras y fétidas (melena) o con sangre fresca, indica un sangrado activo en el tracto digestivo. Representa un síntoma de alarma grave que requiere atención inmediata.",
+    causes: [
+      "Gastritis erosiva severa, úlcera gástrica o duodenal.",
+      "Úlcera marginal en la unión gastrointestinal tras un bypass gástrico.",
+      "Esofagitis erosiva sangrante por reflujo gastroesofágico severo."
+    ],
+    whyConsult: "Este es un síntoma de alarma grave. Debe acudir inmediatamente a urgencias o contactar a su cirujano si presenta cualquier tipo de sangrado digestivo, especialmente si se acompaña de mareo, sudoración fría o debilidad extrema.",
+    relatedConditions: ["reflujo-y-hernia-hiatal", "reganancia-de-peso-bariatrica", "apendicitis-aguda"],
+    image: "/images/symptoms/sangrado-digestivo.jpg",
+    seo: {
+      title: "Sangrado Digestivo y Úlceras CDMX | Dr. David Hernández",
+      description: "Presencia de sangre en vómito o evacuaciones. Conozca las causas graves como úlceras gástricas y el tratamiento de urgencia en la CDMX.",
+      keywords: ["vomitar sangre causas", "heces negras y fétidas", "úlcera sangrante bypass", "urgencias de sangrado digestivo CDMX"]
+    }
   }
 ];

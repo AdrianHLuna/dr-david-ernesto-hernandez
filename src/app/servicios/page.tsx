@@ -2,7 +2,7 @@ import Link from "next/link";
 import { services } from "@/data/services";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { FadeUp, StaggerContainer, StaggerItem } from "@/components/Animations";
-import { FaArrowRight, FaRegClock, FaDollarSign, FaHospitalSymbol } from "react-icons/fa";
+import { FaRegClock, FaHospitalSymbol } from "react-icons/fa";
 
 export const metadata = {
   title: "Procedimientos y Cirugías | Dr. David Ernesto Hernández Torres",
@@ -30,10 +30,20 @@ export default function ServiciosPage() {
             <StaggerItem key={service.id}>
               <Link 
                 href={`/servicios/${service.slug}`} 
-                className="bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-sm hover:border-emerald-500/20 hover:shadow-xl transition-all duration-300 flex flex-col md:flex-row p-8 gap-8 items-center group"
+                className="bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-sm hover:border-emerald-500/20 hover:shadow-xl transition-all duration-300 flex flex-col md:flex-row gap-0 group"
               >
-                {/* Details layout Left */}
-                <div className="flex-grow space-y-4 text-center md:text-left w-full md:w-3/4">
+                {/* Image layout Left */}
+                <div className="w-full md:w-1/4 min-h-[220px] relative overflow-hidden bg-slate-100 flex-shrink-0">
+                  <img 
+                    src={service.image} 
+                    alt={service.name} 
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 absolute inset-0"
+                    loading="lazy"
+                  />
+                </div>
+
+                {/* Details layout Middle */}
+                <div className="flex-grow space-y-4 text-center md:text-left w-full md:w-2/4 p-8 flex flex-col justify-center">
                   <div className="flex flex-wrap justify-center md:justify-start gap-2.5">
                     <span className="text-[9px] bg-slate-100 text-emerald-650 px-3 py-1 rounded-full font-bold uppercase tracking-wider flex items-center gap-1.5">
                       <FaHospitalSymbol size={10} /> {service.type}
@@ -52,19 +62,7 @@ export default function ServiciosPage() {
                   </p>
                 </div>
 
-                {/* Pricing & CTA Right */}
-                <div className="w-full md:w-1/4 border-t md:border-t-0 md:border-l border-slate-200 pt-6 md:pt-0 md:pl-8 flex flex-col items-center md:items-start gap-4">
-                  <div>
-                    <span className="text-[9px] text-slate-400 uppercase tracking-widest block font-bold">Costo Estimado</span>
-                    <span className="text-xl font-bold font-mono text-emerald-600 flex items-center mt-0.5">
-                      <FaDollarSign size={14} /> {service.priceRange?.replace(/\D/g, "") ? service.priceRange : "Valoración"}
-                    </span>
-                  </div>
 
-                  <span className="text-emerald-600 font-bold font-mono text-[10px] uppercase tracking-wider flex items-center gap-2 group-hover:text-slate-900 transition-colors">
-                    Ver más <FaArrowRight size={8} className="group-hover:translate-x-1 transition-transform" />
-                  </span>
-                </div>
               </Link>
             </StaggerItem>
           ))}

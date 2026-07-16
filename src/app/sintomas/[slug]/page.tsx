@@ -46,13 +46,21 @@ export default async function SymptomPage({ params }: { params: Promise<{ slug: 
         <Breadcrumbs items={[{ label: "Inicio", href: "/" }, { label: "Síntomas", href: "/sintomas" }, { label: symptom.name }]} />
         
         {/* Hero Síntoma (Bento Header) */}
-        <FadeUp className="bg-white border border-slate-200 rounded-3xl p-8 sm:p-12 mb-16 mt-8 relative overflow-hidden flex flex-col justify-center shadow-sm">
-          <div className="absolute top-0 right-0 w-64 h-64 bg-emerald-500/5 rounded-full blur-3xl pointer-events-none" />
-          <div className="flex items-center gap-2 text-emerald-600 font-bold text-xs uppercase tracking-wider mb-6">
-            <FaExclamationTriangle size={12} /> Síntoma de Alerta
+        <FadeUp className="grid grid-cols-1 lg:grid-cols-12 gap-8 mb-16 mt-8">
+          <div className="lg:col-span-8 bg-white border border-slate-200 rounded-3xl p-8 sm:p-12 text-slate-800 relative overflow-hidden flex flex-col justify-center shadow-sm">
+            <div className="flex items-center gap-2 text-emerald-600 font-bold text-xs uppercase tracking-wider mb-6">
+              <FaExclamationTriangle size={12} /> Síntoma de Alerta
+            </div>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black mb-6 font-serif text-slate-900">{symptom.name}</h1>
+            <p className="text-sm sm:text-base text-slate-600 leading-relaxed font-light">{symptom.description}</p>
           </div>
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black mb-6 relative z-10 font-serif text-slate-900">{symptom.name}</h1>
-          <p className="text-sm sm:text-base text-slate-600 relative z-10 leading-relaxed font-light max-w-4xl">{symptom.description}</p>
+          <div className="lg:col-span-4 border border-slate-200 rounded-3xl overflow-hidden relative group shadow-sm min-h-[220px]">
+            <img 
+              src={symptom.image} 
+              alt={symptom.name}
+              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 absolute inset-0"
+            />
+          </div>
         </FadeUp>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">

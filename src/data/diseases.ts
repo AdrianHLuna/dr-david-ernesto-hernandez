@@ -49,7 +49,7 @@ export const diseases: MedicalCondition[] = [
     ],
     relatedServices: ["consulta-cirugia-general-y-bariatrica", "manga-gastrica-y-bypass-laparoscopico"],
     relatedSymptoms: ["dificultad-bajar-peso", "ardor-pecho-y-agruras"],
-    image: "/images/diseases/obesidad.jpg",
+    image: "/enfermedades/obesidad.png",
     seo: {
       title: "Tratamiento de Obesidad y Cirugía Bariátrica CDMX | Dr. David Hernández",
       description: "Recupere su salud metabólica. Especialista en cirugía bariátrica (manga y bypass gástrico) en Roma Norte y Polanco. Agende su valoración.",
@@ -103,7 +103,7 @@ export const diseases: MedicalCondition[] = [
     ],
     relatedServices: ["consulta-segunda-opinion", "manga-gastrica-y-bypass-laparoscopico"],
     relatedSymptoms: ["dificultad-bajar-peso", "ardor-pecho-y-agruras"],
-    image: "/images/diseases/reganancia.jpg",
+    image: "/enfermedades/reganancia.png",
     seo: {
       title: "Cirugía de Revisión y Reganancia de Peso CDMX | Dr. David Hernández",
       description: "Especialista en conversión de manga a bypass por reganancia de peso o reflujo en la Ciudad de México. Consulta de segunda opinión médica.",
@@ -157,7 +157,7 @@ export const diseases: MedicalCondition[] = [
     ],
     relatedServices: ["cirugia-reflujo-y-hernia-hiatal"],
     relatedSymptoms: ["ardor-pecho-y-agruras", "dolor-abdominal"],
-    image: "/images/diseases/reflujo.jpg",
+    image: "/enfermedades/reflujo.png",
     seo: {
       title: "Cirugía de Reflujo Gastroesofágico y Hernia Hiatal en CDMX",
       description: "Elimine las agruras y el reflujo definitivamente. Especialista en fundoplicatura laparoscópica en Roma Norte y Polanco. Dr. David Hernández.",
@@ -208,7 +208,7 @@ export const diseases: MedicalCondition[] = [
     ],
     relatedServices: ["colecistectomía-laparoscopica"],
     relatedSymptoms: ["dolor-debajo-costillas", "dolor-abdominal"],
-    image: "/images/diseases/vesicula.jpg",
+    image: "/enfermedades/vesicula.png",
     seo: {
       title: "Cirugía de Vesícula Biliar por Laparoscopia CDMX | Dr. David Hernández",
       description: "Evite complicaciones graves. Especialista en colecistectomía laparoscópica en Roma Norte y Polanco. Cirugía de vesícula segura y rápida.",
@@ -259,7 +259,7 @@ export const diseases: MedicalCondition[] = [
     ],
     relatedServices: ["hernioplastia-abdominal-laparoscopica"],
     relatedSymptoms: ["abultamiento-abdomen-ingle", "dolor-abdominal"],
-    image: "/images/diseases/hernia.jpg",
+    image: "/enfermedades/hernia.png",
     seo: {
       title: "Cirugía de Hernia Inguinal y Umbilical CDMX | Dr. David Hernández",
       description: "Reparación de hernias con malla por laparoscopia. Especialista en cirugía de hernia inguinal, umbilical y postincisional en Roma Norte y Polanco.",
@@ -309,7 +309,7 @@ export const diseases: MedicalCondition[] = [
     ],
     relatedServices: ["consulta-cirugia-general-y-bariatrica"],
     relatedSymptoms: ["dolor-abdominal", "dolor-debajo-costillas"],
-    image: "/images/diseases/apendicitis.jpg",
+    image: "/enfermedades/apendicitis.png",
     seo: {
       title: "Urgencias de Apendicitis y Cirugía de Apéndice en CDMX",
       description: "Atención inmediata de apendicectomía laparoscópica las 24 horas. Dr. David Ernesto Hernández Torres. Roma Norte y Polanco.",
@@ -362,11 +362,176 @@ export const diseases: MedicalCondition[] = [
     ],
     relatedServices: ["consulta-segunda-opinion"],
     relatedSymptoms: ["abultamiento-abdomen-ingle"],
-    image: "/images/diseases/tiroides.jpg",
+    image: "/enfermedades/tiroides.png",
     seo: {
       title: "Cirugía de Tiroides y Nódulos Tiroideos CDMX | Dr. David Hernández",
       description: "Diagnóstico y cirugía de tiroides (tiroidectomía) en la Ciudad de México. Especialista en nódulos tiroideos en Roma Norte y Polanco.",
       keywords: ["cirugía de tiroides precio CDMX", "tiroidectomía laparoscópica o abierta", "nódulo tiroideo biopsia BAAF", "cirujano de cuello y tiroides"]
+    }
+  },
+  {
+    id: "dh-dis-008",
+    slug: "colecistitis-aguda-cronica",
+    name: "Colecistitis Aguda y Crónica",
+    technicalName: "Colecistitis Aguda o Crónica Litiásica/Alitiásica",
+    description: "La colecistitis es la inflamación de la vesícula biliar, frecuentemente ocasionada por la obstrucción del conducto de salida (conducto cístico) por piedras. Puede presentarse de forma aguda (inflamación repentina con dolor muy intenso, fiebre y peligro de infección o perforación) o crónica (episodios repetitivos de cólicos e inflamación que dañan y engrosan las paredes de la vesícula de manera permanente). Representa una de las principales urgencias quirúrgicas en México y requiere la remoción de la vesícula biliar por laparoscopia.",
+    symptoms: [
+      "Dolor severo y constante debajo de las costillas del lado derecho que puede irradiarse al hombro",
+      "Náuseas y vómito de características persistentes",
+      "Fiebre de bajo grado o escalofríos en casos de infección activa",
+      "Dolor extremo a la palpación del abdomen superior derecho"
+    ],
+    causes: [
+      "Obstrucción del flujo de la bilis por un cálculo impactado en el conducto cístico",
+      "Infección bacteriana secundaria por estasis biliar",
+      "Trastornos de vaciamiento o vascularidad de la vesícula"
+    ],
+    riskFactors: [
+      "Haber presentado cólicos biliares de forma previa",
+      "Ser mujer, tener más de 40 años, cursar con obesidad o experimentar pérdida rápida de peso",
+      "Ayuno prolongado o nutrición parenteral"
+    ],
+    mexicoStats: "La inflamación vesicular (colecistitis) es la segunda causa de intervención de cirugía general de urgencia en adultos en México, afectando predominantemente al género femenino.",
+    complications: [
+      "Gangrena vesicular (muerte del tejido de la vesícula por falta de riego)",
+      "Perforación de la vesícula con peritonitis biliar grave",
+      "Empiema vesicular (acumulación de pus dentro del órgano)"
+    ],
+    treatments: [
+      "Colecistectomía laparoscópica de urgencia o programada (estándar de oro)",
+      "Manejo médico inicial con ayuno, hidratación intravenosa y antibióticos de amplio espectro"
+    ],
+    faqs: [
+      {
+        question: "¿Cuál es la diferencia entre piedras en la vesícula y colecistitis?",
+        answer: "Las piedras (colelitiasis) pueden permanecer en la vesícula por años sin causar síntomas. La colecistitis es la complicación directa que ocurre cuando una de esas piedras bloquea el conducto de salida de forma permanente, provocando inflamación y dolor agudo que requiere atención inmediata."
+      },
+      {
+        question: "¿Se puede curar la colecistitis solo con medicamentos?",
+        answer: "No de forma definitiva. Los antibióticos y analgésicos pueden desinflamar la vesícula temporalmente, pero las piedras seguirán ahí y el riesgo de un nuevo ataque aún más severo o de pancreatitis biliar es sumamente alto. La cirugía de extirpación es el único tratamiento definitivo."
+      },
+      {
+        question: "¿Cómo es el postoperatorio tras una cirugía de colecistitis?",
+        answer: "Al realizarse por laparoscopia (mínima invasión), el dolor es muy leve y la mayoría de los pacientes regresan a casa en menos de 24 horas. Se requiere una dieta baja en grasas por 2 semanas y se puede retomar la vida normal en unos 7 días."
+      }
+    ],
+    relatedServices: ["colecistectomía-laparoscopica"],
+    relatedSymptoms: ["dolor-debajo-costillas", "dolor-abdominal-agudo"],
+    image: "/enfermedades/colecistitis.png",
+    seo: {
+      title: "Colecistitis Aguda y Crónica CDMX | Dr. David Hernández",
+      description: "Tratamiento definitivo para vesícula biliar inflamada o infectada. Colecistectomía laparoscópica urgente y programada en Roma Norte y Polanco.",
+      keywords: ["colecistitis aguda tratamiento", "vesícula biliar inflamada cirujano", "colecistectomía de urgencia CDMX", "dolor de vesícula comer grasas"]
+    }
+  },
+  {
+    id: "dh-dis-009",
+    slug: "hernia-inguinal",
+    name: "Hernia Inguinal",
+    technicalName: "Hernia Inguinal Directa e Indirecta",
+    description: "La hernia inguinal es la protrusión de una porción de tejido (como grasa intraabdominal o un segmento de intestino) a través de una zona de debilidad o desgarro en los músculos del canal inguinal. Es un defecto muy frecuente debido a la predisposición anatómica masculina. Causa molestias, dolor persistente o pesadez en la ingle, y requiere corrección quirúrgica (hernioplastia con colocación de malla) para prevenir complicaciones graves de estrangulamiento intestinal.",
+    symptoms: [
+      "Abultamiento visible o palpable en el área de la ingle que incrementa al estar de pie, toser o pujar",
+      "Dolor, pesadez o molestia persistente en la ingle",
+      "Dolor agudo irradiado hacia el escroto en pacientes varones",
+      "Sensación de ardor o debilidad en el sitio de la hernia"
+    ],
+    causes: [
+      "Debilidad de nacimiento (congénita) en los tejidos del canal inguinal",
+      "Esfuerzo repetitivo por levantar objetos pesados, tos crónica o estreñimiento",
+      "Aumento constante de la presión dentro del abdomen por sobrepeso"
+    ],
+    riskFactors: [
+      "Ser del género masculino (tienen hasta 8 veces más probabilidad de padecerla)",
+      "Antecedentes de hernias inguinales en familiares de primer grado",
+      "Tabaquismo crónico (altera la síntesis de colágeno y debilita los tejidos)",
+      "Tos o estreñimiento crónicos"
+    ],
+    mexicoStats: "La hernia inguinal representa la hernia de pared abdominal más diagnosticada y operada en hombres en México, siendo la ingle derecha la localización más común.",
+    complications: [
+      "Incarcelación (la hernia queda atrapada afuera del abdomen y no puede regresarse con maniobras manuales)",
+      "Estrangulación (el flujo de sangre al intestino atrapado se suspende, causando gangrena intestinal y requiriendo cirugía de urgencia)"
+    ],
+    treatments: [
+      "Hernioplastia inguinal laparoscópica con malla (técnica TAPP / TEP de mínima invasión)",
+      "Hernioplastia abierta con colocación de malla (técnica de Lichtenstein)"
+    ],
+    faqs: [
+      {
+        question: "¿Las hernias inguinales siempre deben operarse?",
+        answer: "Sí, debido a que el canal inguinal es un espacio estrecho y rígido, existe un riesgo constante de que una porción de intestino quede atrapada (encarcelada) y pierda su circulación sanguínea (estrangulación). Por ello, se recomienda programar la cirugía al momento del diagnóstico."
+      },
+      {
+        question: "¿Es mejor la cirugía abierta o la laparoscópica para hernia inguinal?",
+        answer: "La cirugía laparoscópica ofrece ventajas significativas: cicatrices de pocos milímetros, menor dolor postoperatorio, menor riesgo de dolor crónico inguinal y una recuperación mucho más rápida. Es ideal sobre todo en hernias de ambos lados (bilaterales) o recurrentes."
+      },
+      {
+        question: "¿Se puede realizar ejercicio después de una cirugía de hernia inguinal?",
+        answer: "Se puede caminar y realizar actividades ligeras desde el primer día. Sin embargo, para realizar actividades de carga, ejercicio de gimnasio, correr o cualquier esfuerzo abdominal importante, se deben esperar entre 6 y 8 semanas para asegurar la correcta integración de la malla."
+      }
+    ],
+    relatedServices: ["hernioplastia-abdominal-laparoscopica"],
+    relatedSymptoms: ["abultamiento-abdomen-ingle", "dolor-abdominal-agudo"],
+    image: "/enfermedades/hernia-inguinal.png",
+    seo: {
+      title: "Cirugía de Hernia Inguinal CDMX | Dr. David Ernesto Hernández",
+      description: "Reparación de hernia inguinal con malla por laparoscopia. Menor dolor y rápida recuperación. Consulta en la Roma Norte y Polanco.",
+      keywords: ["hernia inguinal cirugía precio", "hernioplastia inguinal laparoscópica CDMX", "bolita en la ingle dolorosa", "cirujano especialista en hernias"]
+    }
+  },
+  {
+    id: "dh-dis-010",
+    slug: "diastasis-de-rectos",
+    name: "Diástasis de Músculos Rectos",
+    technicalName: "Diástasis de los Músculos Rectos Abdominales",
+    description: "La diástasis de rectos es la separación de los músculos rectos del abdomen (los músculos del 'six-pack') debido al estiramiento y adelgazamiento de la línea alba (el tejido conectivo que los mantiene unidos en el centro). Se observa con frecuencia tras el embarazo o pérdidas masivas de peso. Aunque técnicamente no es una hernia porque no hay un orificio con riesgo de estrangulación, debilita la estabilidad abdominal, produce dolor de espalda crónico y frecuentemente coexiste con hernias umbilicales o epigástricas.",
+    symptoms: [
+      "Protrusión o cresta vertical en la línea media del abdomen al incorporarse o hacer esfuerzo",
+      "Flacidez excesiva y apariencia de 'abdomen de embarazada' que no mejora con ejercicio",
+      "Dolor crónico en la zona lumbar (lumbalgia) debido a la debilidad del soporte del core",
+      "Inestabilidad postural y debilidad general de la pared abdominal"
+    ],
+    causes: [
+      "Embarazo (el estiramiento extremo del útero sobre la pared muscular)",
+      "Pérdida o ganancia masiva y rápida de peso",
+      "Predisposición genética o debilidad estructural del tejido conectivo"
+    ],
+    riskFactors: [
+      "Haber tenido múltiples embarazos o gestaciones de bebés grandes (macrosomía)",
+      "Embarazos con poca diferencia de tiempo entre ellos",
+      "Realizar ejercicios abdominales tradicionales con técnica incorrecta o cargas excesivas"
+    ],
+    mexicoStats: "La diástasis de rectos afecta a un gran número de mujeres postparto en México, siendo frecuentemente confundida con obesidad abdominal y asociada a hernias umbilicales no resueltas.",
+    complications: [
+      "Desarrollo o recidiva de hernias umbilicales y epigástricas complejas",
+      "Dolor de espalda crónico severo debido al desbalance muscular",
+      "Disfunción del suelo pélvico e incontinencia urinaria de esfuerzo"
+    ],
+    treatments: [
+      "Reconstrucción laparoscópica de la pared abdominal (plicatura de rectos por mínima invasión)",
+      "Fisioterapia del suelo pélvico y ejercicios hipopresivos para diástasis leves"
+    ],
+    faqs: [
+      {
+        question: "¿La diástasis de rectos se puede quitar con ejercicio?",
+        answer: "La diástasis leve (menos de 2 cm) puede mejorar y estabilizarse con fisioterapia especializada y ejercicios hipopresivos. Sin embargo, cuando la separación es mayor o cursa con dolor lumbar y hernia asociada, el ejercicio ordinario no la corrige y los abdominales tradicionales pueden empeorarla. La plicatura quirúrgica es el tratamiento reconstructivo adecuado."
+      },
+      {
+        question: "¿Cómo se corrige quirúrgicamente la diástasis de rectos?",
+        answer: "Actualmente se realiza de forma mínimamente invasiva por laparoscopia. El procedimiento consiste en suturar y aproximar los músculos rectos a la línea media (plicatura) y colocar una malla ultraligera de refuerzo detrás de los músculos para dar soporte a la pared abdominal, resolviendo al mismo tiempo cualquier hernia umbilical."
+      },
+      {
+        question: "¿Cuándo es el momento ideal para operarse de diástasis después del embarazo?",
+        answer: "Se recomienda esperar al menos 6 meses después del parto y que se haya estabilizado el peso corporal. Además, es ideal realizar la cirugía cuando la mujer no tenga planes de futuros embarazos, ya que una nueva gestación volvería a estirar y separar las fibras musculares."
+      }
+    ],
+    relatedServices: ["hernioplastia-abdominal-laparoscopica"],
+    relatedSymptoms: ["abultamiento-abdomen-ingle", "dificultad-bajar-peso"],
+    image: "/enfermedades/diastasis-rectos.png",
+    seo: {
+      title: "Cirugía de Diástasis de Rectos en CDMX | Dr. David Hernández",
+      description: "Reconstrucción laparoscópica de la pared abdominal por diástasis de rectos y hernia umbilical en la CDMX. Recupere la firmeza de su abdomen.",
+      keywords: ["diástasis de rectos tratamiento CDMX", "plicatura de músculos rectos precio", "abdomen abultado postparto cirugía", "reparación de hernia umbilical y diástasis"]
     }
   }
 ];

@@ -61,14 +61,21 @@ export default async function DiseasePage({ params }: { params: Promise<{ slug: 
         
         {/* Hero Enfermedad (Bento Header) */}
         <FadeUp className="grid grid-cols-1 lg:grid-cols-12 gap-8 mb-16 mt-8">
-          <div className="lg:col-span-8 bg-white border border-slate-200 rounded-3xl p-8 sm:p-12 text-slate-800 relative overflow-hidden flex flex-col justify-center shadow-sm">
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black mb-6 relative z-10 font-serif text-slate-900">{disease.name}</h1>
-            <p className="text-sm sm:text-base text-slate-600 relative z-10 leading-relaxed font-light">{disease.description}</p>
+          <div className="lg:col-span-5 bg-white border border-slate-200 rounded-3xl p-8 sm:p-10 text-slate-800 relative overflow-hidden flex flex-col justify-center shadow-sm">
+            <h1 className="text-2xl sm:text-3xl lg:text-4xl font-black mb-4 font-serif text-slate-900 leading-tight">{disease.name}</h1>
+            <p className="text-xs sm:text-sm text-slate-600 leading-relaxed font-light">{disease.description}</p>
           </div>
-          <div className="lg:col-span-4 bg-gradient-to-br from-emerald-50 to-white border border-emerald-500/20 rounded-3xl p-8 flex flex-col justify-between min-h-[250px] shadow-md">
-            <FaInfoCircle className="text-emerald-600 text-3xl" />
+          <div className="lg:col-span-4 border border-slate-200 rounded-3xl overflow-hidden relative group shadow-sm min-h-[200px]">
+            <img 
+              src={disease.image} 
+              alt={disease.name}
+              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 absolute inset-0"
+            />
+          </div>
+          <div className="lg:col-span-3 bg-gradient-to-br from-emerald-50 to-white border border-emerald-500/20 rounded-3xl p-8 flex flex-col justify-between min-h-[200px] shadow-md">
+            <FaInfoCircle className="text-emerald-600 text-2xl" />
             <div>
-              <h4 className="font-bold text-slate-900 text-xs uppercase tracking-widest mb-2">Impacto en México</h4>
+              <h4 className="font-bold text-slate-900 text-[10px] uppercase tracking-widest mb-2">Impacto en México</h4>
               <p className="text-xs text-slate-600 font-light leading-relaxed">
                 {disease.mexicoStats}
               </p>

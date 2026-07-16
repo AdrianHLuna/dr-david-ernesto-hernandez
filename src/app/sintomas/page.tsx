@@ -42,15 +42,21 @@ export default function SintomasPage() {
                   href={`/sintomas/${sym.slug}`} 
                   className="bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-sm hover:border-emerald-500/20 hover:shadow-xl transition-all duration-300 flex flex-col h-full group"
                 >
+                  <div className="relative aspect-video w-full overflow-hidden bg-slate-100">
+                    <img 
+                      src={sym.image} 
+                      alt={sym.name}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      loading="lazy"
+                    />
+                    <div className="absolute top-4 left-4">
+                      <span className={`text-[9px] px-3 py-1 rounded-full font-bold uppercase tracking-wider border bg-white/95 backdrop-blur-sm shadow-sm ${severity.style}`}>
+                        {severity.label}
+                      </span>
+                    </div>
+                  </div>
                   <div className="p-8 flex flex-col justify-between flex-grow">
                     <div>
-                      <div className="flex justify-between items-center mb-6">
-                        <span className={`text-[9px] px-3 py-1 rounded-full font-bold uppercase tracking-wider border ${severity.style}`}>
-                          {severity.label}
-                        </span>
-                        <FaExclamationTriangle size={12} className="text-slate-400 group-hover:text-emerald-600 transition-colors" />
-                      </div>
-                      
                       <h2 className="text-2xl font-bold text-slate-900 mb-3 font-serif group-hover:text-emerald-600 transition-colors">
                         {sym.name}
                       </h2>

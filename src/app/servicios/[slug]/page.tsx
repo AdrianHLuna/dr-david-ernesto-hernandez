@@ -54,19 +54,26 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
         
         {/* Hero Servicio (Bento Header) */}
         <FadeUp className="grid grid-cols-1 lg:grid-cols-12 gap-8 mb-16 mt-8">
-          <div className="lg:col-span-8 bg-white border border-slate-200 rounded-3xl p-8 sm:p-12 text-slate-800 relative overflow-hidden flex flex-col justify-center shadow-sm">
+          <div className="lg:col-span-5 bg-white border border-slate-200 rounded-3xl p-8 sm:p-10 text-slate-800 relative overflow-hidden flex flex-col justify-center shadow-sm">
             <div>
-              <span className="inline-block px-4 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-600 font-bold text-xs uppercase tracking-wider mb-6">
+              <span className="inline-block px-4 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-600 font-bold text-xs uppercase tracking-wider mb-4">
                 {service.type}
               </span>
             </div>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black mb-6 relative z-10 font-serif text-slate-900">{service.name}</h1>
-            <p className="text-sm sm:text-base text-slate-600 relative z-10 leading-relaxed font-light">{service.longDescription}</p>
+            <h1 className="text-2xl sm:text-3xl lg:text-4xl font-black mb-4 font-serif text-slate-900 leading-tight">{service.name}</h1>
+            <p className="text-xs sm:text-sm text-slate-600 leading-relaxed font-light">{service.longDescription}</p>
           </div>
-          <div className="lg:col-span-4 bg-gradient-to-br from-emerald-50 to-white border border-emerald-500/20 rounded-3xl p-8 flex flex-col justify-between min-h-[250px] shadow-md">
-            <FaInfoCircle className="text-emerald-600 text-3xl" />
+          <div className="lg:col-span-4 border border-slate-200 rounded-3xl overflow-hidden relative group shadow-sm min-h-[200px]">
+            <img 
+              src={service.image} 
+              alt={service.name}
+              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 absolute inset-0"
+            />
+          </div>
+          <div className="lg:col-span-3 bg-gradient-to-br from-emerald-50 to-white border border-emerald-500/20 rounded-3xl p-8 flex flex-col justify-between min-h-[200px] shadow-md">
+            <FaInfoCircle className="text-emerald-600 text-2xl" />
             <div>
-              <h4 className="font-bold text-slate-900 text-xs uppercase tracking-widest mb-2">Anestesia Utilizada</h4>
+              <h4 className="font-bold text-slate-900 text-[10px] uppercase tracking-widest mb-2">Anestesia Utilizada</h4>
               <p className="text-xs text-slate-600 font-light leading-relaxed">
                 {service.anesthesiaType || "Sin anestesia / Local"}
               </p>
@@ -96,12 +103,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
                   <dt className="text-xs font-bold text-slate-400 uppercase tracking-widest">¿Es doloroso?</dt>
                   <dd className="text-base font-bold text-slate-800 mt-1">{service.isPainful ? "Sí, requiere manejo analgésico" : "Dolor leve a nulo"}</dd>
                 </div>
-                {service.priceRange && (
-                  <div>
-                    <dt className="text-xs font-bold text-slate-400 uppercase tracking-widest">Costo de Consulta / Servicio</dt>
-                    <dd className="text-base font-bold text-slate-800 mt-1">{service.priceRange}</dd>
-                  </div>
-                )}
+
                 
                 {/* Custom Specs */}
                 {service.technicalSpecs && Object.entries(service.technicalSpecs).map(([key, value]) => (

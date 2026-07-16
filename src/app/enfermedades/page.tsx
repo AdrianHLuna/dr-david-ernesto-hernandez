@@ -41,14 +41,21 @@ export default function EnfermedadesPage() {
                 href={`/enfermedades/${disease.slug}`} 
                 className="bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-sm hover:border-emerald-500/20 hover:shadow-xl transition-all duration-300 flex flex-col h-full group"
               >
+                <div className="relative aspect-video w-full overflow-hidden bg-slate-100">
+                  <img 
+                    src={disease.image} 
+                    alt={disease.name}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    loading="lazy"
+                  />
+                  <div className="absolute top-4 left-4">
+                    <span className="text-[9px] bg-white/90 backdrop-blur-sm text-emerald-600 px-3 py-1 rounded-full font-bold uppercase tracking-wider shadow-sm">
+                      {getCategory(disease.slug)}
+                    </span>
+                  </div>
+                </div>
                 <div className="p-8 flex flex-col justify-between flex-grow">
                   <div>
-                    <div className="flex justify-between items-center mb-6">
-                      <span className="text-[9px] bg-slate-100 text-emerald-600 px-3 py-1 rounded-full font-bold uppercase tracking-wider">
-                        {getCategory(disease.slug)}
-                      </span>
-                    </div>
-                    
                     <h2 className="text-2xl font-bold text-slate-900 mb-3 font-serif group-hover:text-emerald-600 transition-colors">
                       {disease.name}
                     </h2>
