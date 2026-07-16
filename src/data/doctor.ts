@@ -3,9 +3,9 @@ import { DoctorProfile } from "@/types/schema";
 export const doctor: DoctorProfile = {
   name: "David Ernesto Hernández Torres",
   title: "Dr.",
-  specialty: "Cirugía General y Cirugía Bariátrica",
-  specialistTitle: "Cirujano General y Bariatra",
-  subspecialty: "Especialista en Manga Gástrica, Bypass Gástrico, Reflujo y Hernias",
+  specialty: "Cirugía General",
+  specialistTitle: "Cirujano General",
+  subspecialty: "Especialista en Laparoscopia, Hernias, Vesícula, Reflujo y Tiroides",
   cedula: "12748741", // IPN
   cedulaEspecialidad: "15115068", // UNAM
   cofepris: undefined,
@@ -22,13 +22,13 @@ export const doctor: DoctorProfile = {
   insurances: ["Todos los seguros médicos (Pago Directo y Reembolso)"],
   schedule: "Roma Norte: Lun a Vie 14:00-20:00, Sáb 8:00-15:00 | Polanco: Lun a Vie 15:00-20:00 (Sujeto a disponibilidad)",
   photo: "/images/doctor.png",
-  bio: "El Dr. David Ernesto Hernández Torres es un destacado médico cirujano egresado del Instituto Politécnico Nacional (IPN), con especialidad en Cirugía General realizada en la Universidad Nacional Autónoma de México (UNAM). Cuenta con certificaciones vigentes ante la Asociación Mexicana de Cirugía General (AMCG) y el Consejo Mexicano de Cirugía General (CMCG), además de ser miembro activo del Colegio Mexicano de Cirugía para la Obesidad y Enfermedades Metabólicas (CMCOEM). Especializado en cirugía bariátrica y de pared abdominal por laparoscopia, ha atendido a más de 1,000 pacientes, brindando un trato humano, ético y de máxima seguridad clínica.",
+  bio: "El Dr. David Ernesto Hernández Torres es médico cirujano egresado del Instituto Politécnico Nacional (IPN), con especialidad en Cirugía General por la Universidad Nacional Autónoma de México (UNAM). Cuenta con certificaciones vigentes ante la Asociación Mexicana de Cirugía General (AMCG) y el Consejo Mexicano de Cirugía General (CMCG), además de ser miembro activo del Colegio Mexicano de Cirugía para la Obesidad y Enfermedades Metabólicas (CMCOEM). Especializado en cirugía laparoscópica de hernias de pared abdominal, cirugía de vesícula, reflujo gastroesofágico y nódulos tiroideos, ha atendido a más de 1,000 pacientes brindando un trato humano, ético y de máxima seguridad clínica.",
   philosophy: "Tratamientos quirúrgicos mínimamente invasivos con los más altos estándares de seguridad y tecnología para una recuperación rápida y una mejor calidad de vida.",
   experience: [
     {
       year: "Trayectoria Profesional",
-      title: "Especialista en Cirugía General y Bariátrica",
-      description: "Práctica clínica dedicada a la cirugía laparoscópica de vesícula, hernias complejas de pared abdominal y cirugía bariátrica de manga y bypass.",
+      title: "Especialista en Cirugía General",
+      description: "Práctica clínica dedicada a la cirugía laparoscópica de vesícula, hernias complejas de pared abdominal, reflujo gastroesofágico y nódulos tiroideos.",
     },
     {
       year: "Atención Clínica",

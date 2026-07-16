@@ -6,7 +6,7 @@ export const diseases: MedicalCondition[] = [
     slug: "obesidad-clinica",
     name: "Obesidad Grados I, II y III",
     technicalName: "Obesidad Clínica y Enfermedad Metabólica",
-    description: "La obesidad es una enfermedad crónica, compleja y progresiva caracterizada por una acumulación anormal o excesiva de grasa corporal que perjudica la salud. Se asocia directamente con comorbilidades graves como la diabetes tipo 2, la hipertensión arterial, dislipidemia (colesterol/triglicéridos elevados), hígado graso y apnea del sueño. Cuando los métodos convencionales fallan, la cirugía bariátrica (manga gástrica y bypass gástrico) es el tratamiento más eficaz a largo plazo para lograr la remisión de estas enfermedades metabólicas y mejorar la expectativa y calidad de vida del paciente.",
+    description: "La obesidad es una enfermedad crónica, compleja y progresiva caracterizada por una acumulación anormal o excesiva de grasa corporal que perjudica la salud. Se clasifica en grado I (IMC 30–34.9), grado II (IMC 35–39.9) y grado III u obesidad mórbida (IMC ≥40). Se asocia directamente con comorbilidades graves como la diabetes tipo 2, la hipertensión arterial, dislipidemia (colesterol/triglicéridos elevados), hígado graso y apnea del sueño. El Dr. David Hernández realiza la valoración, diagnóstico y manejo médico-quirúrgico de las complicaciones asociadas a la obesidad.",
     symptoms: [
       "Dificultad persistente para perder peso a pesar de dietas y ejercicio",
       "Hambre frecuente y dificultad para controlar las porciones (falta de saciedad)",
@@ -33,27 +33,27 @@ export const diseases: MedicalCondition[] = [
       "Mayor riesgo de ciertos tipos de cáncer y desgaste articular severo"
     ],
     treatments: [
-      "Cirugía de Manga Gástrica por laparoscopia (mínima invasión)",
-      "Cirugía de Bypass Gástrico por laparoscopia",
-      "Tratamiento médico integral multidisciplinario (nutrición y psicología)"
+      "Valoración médica integral y plan de tratamiento multidisciplinario",
+      "Evaluación y manejo de comorbilidades (diabetes, hipertensión, reflujo)",
+      "Referencia a especialista bariátrico cuando se requiera manejo quirúrgico de la obesidad"
     ],
     faqs: [
       {
-        question: "¿Cómo saber si soy candidato a cirugía bariátrica?",
-        answer: "Generalmente son candidatos pacientes con un Índice de Masa Corporal (IMC) mayor a 35, o mayor a 30 si presentan enfermedades asociadas como diabetes, hipertensión o apnea del sueño, y que no hayan obtenido resultados duraderos con tratamientos convencionales."
+        question: "¿Qué especialista debo consultar por obesidad?",
+        answer: "El Dr. David Hernández puede realizar la valoración inicial, evaluar comorbilidades (diabetes, hipertensión, reflujo) y las complicaciones quirúrgicas asociadas a la obesidad, orienta al paciente y coordina el manejo multidisciplinario con el especialista correspondiente."
       },
       {
-        question: "¿La cirugía bariátrica cura la diabetes tipo 2?",
-        answer: "Sí, en un gran porcentaje de casos se logra la remisión completa de la diabetes tipo 2 (los niveles de azúcar se normalizan sin necesidad de medicamentos), especialmente tras un bypass gástrico, debido a los cambios metabólicos y hormonales inducidos por la cirugía."
+        question: "¿Qué padecimientos relacionados con la obesidad atiende el Dr. Hernández?",
+        answer: "Atiende hernias abdominales asociadas al sobrepeso, reflujo gastroesofágico, hernia hiatal, colecistitis y cálculos biliares frecuentes en pacientes con obesidad, así como complicaciones gastrointestinales relacionadas al exceso de peso."
       }
     ],
-    relatedServices: ["consulta-cirugia-general-y-bariatrica", "manga-gastrica-y-bypass-laparoscopico"],
+    relatedServices: ["consulta-cirugia-general"],
     relatedSymptoms: ["dificultad-bajar-peso", "ardor-pecho-y-agruras"],
     image: "/enfermedades/obesidad.png",
     seo: {
-      title: "Tratamiento de Obesidad y Cirugía Bariátrica CDMX | Dr. David Hernández",
-      description: "Recupere su salud metabólica. Especialista en cirugía bariátrica (manga y bypass gástrico) en Roma Norte y Polanco. Agende su valoración.",
-      keywords: ["cirugía bariátrica CDMX", "manga gástrica precio México", "cirujano bariatra Roma Norte", "tratamiento de la obesidad"]
+      title: "Obesidad y Complicaciones Quirúrgicas CDMX | Dr. David Hernández",
+      description: "Valoración médica de obesidad y sus complicaciones quirúrgicas (hernias, reflujo, vesícula) en Roma Norte y Polanco. Dr. David Hernández Torres.",
+      keywords: ["complicaciones de la obesidad cirugía", "cirujano general obesidad CDMX", "reflujo por obesidad tratamiento", "hernia por sobrepeso"]
     }
   },
   {
@@ -61,7 +61,7 @@ export const diseases: MedicalCondition[] = [
     slug: "reganancia-de-peso-bariatrica",
     name: "Reganancia de Peso Post-Bariátrica",
     technicalName: "Falla Quirúrgica o Metabólica Post-Bariátrica",
-    description: "La reganancia de peso o la pérdida de peso insuficiente después de una cirugía bariátrica (como manga gástrica o bypass gástrico) es una situación multifactorial que afecta a un porcentaje de pacientes a mediano o largo plazo. Puede deberse a cambios anatómicos (dilatación de la manga o del reservorio gástrico), adaptaciones metabólicas del organismo, o bien al retorno de hábitos alimenticios inapropiados. El Dr. David Hernández evalúa de manera minuciosa cada caso para determinar si el paciente se beneficia de una cirugía de revisión (conversión de manga a bypass) o de un manejo médico-nutricional de rescate.",
+    description: "La reganancia de peso o la pérdida de peso insuficiente después de una cirugía bariátrica (como manga gástrica o bypass gástrico) es una situación multifactorial que afecta a un porcentaje de pacientes a mediano o largo plazo. Puede deberse a cambios anatómicos (dilatación de la manga o del reservorio gástrico), adaptaciones metabólicas del organismo, o bien al retorno de hábitos alimenticios inapropiados. El Dr. David Hernández evalúa las complicaciones gastrointestinales asociadas y brinda orientación médica especializada.",
     symptoms: [
       "Recuperación progresiva del peso que ya se había perdido con la cirugía anterior",
       "Pérdida de peso insuficiente (menos del 50% del exceso de peso esperado)",
@@ -87,27 +87,27 @@ export const diseases: MedicalCondition[] = [
       "Frustración psicológica y pérdida de movilidad articular"
     ],
     treatments: [
-      "Cirugía de revisión bariátrica por laparoscopia (conversión de manga a bypass gástrico)",
-      "Ajuste y remodelación de un bypass gástrico previo",
+      "Valoración de segunda opinión médica y evaluación de complicaciones gastrointestinales",
+      "Manejo del reflujo gastroesofágico post-manga por laparoscopia",
       "Terapia médica y farmacológica de rescate metabólico con apoyo nutricional continuo"
     ],
     faqs: [
       {
-        question: "¿Se puede volver a operar a alguien que ya tuvo una cirugía bariátrica?",
-        answer: "Sí, se llama cirugía de revisión. Es un procedimiento más complejo que requiere alta experiencia. La conversión de una manga gástrica a un bypass gástrico es la técnica más realizada, especialmente cuando hay reganancia de peso combinada con reflujo gastroesofágico severo."
+        question: "¿Qué especialista debo consultar si tengo complicaciones de cirugía bariátrica?",
+        answer: "El Dr. David Hernández puede evaluar las complicaciones gastrointestinales como reflujo severo, intolerancia alimentaria o hernias postoperatorias. Para la conversión de cirugía (manga a bypass), se coordinará la referencia al especialista bariátrico adecuado."
       },
       {
         question: "¿Por qué da reflujo después de una manga gástrica?",
-        answer: "La manga gástrica aumenta la presión dentro del estómago residual y altera la anatomía de la unión esófago-gástrica. Si el paciente desarrolla reflujo severo que no cede con medicamentos, la conversión a bypass gástrico es el tratamiento de elección para eliminar el reflujo por completo."
+        answer: "La manga gástrica aumenta la presión dentro del estómago residual y altera la anatomía de la unión esófago-gástrica, lo que provoca reflujo crónico. Este reflujo puede valorarse y manejarse quirúrgicamente con una fundoplicatura laparoscópica."
       }
     ],
-    relatedServices: ["consulta-segunda-opinion", "manga-gastrica-y-bypass-laparoscopico"],
+    relatedServices: ["consulta-segunda-opinion", "cirugia-reflujo-y-hernia-hiatal"],
     relatedSymptoms: ["dificultad-bajar-peso", "ardor-pecho-y-agruras"],
     image: "/enfermedades/reganancia.png",
     seo: {
-      title: "Cirugía de Revisión y Reganancia de Peso CDMX | Dr. David Hernández",
-      description: "Especialista en conversión de manga a bypass por reganancia de peso o reflujo en la Ciudad de México. Consulta de segunda opinión médica.",
-      keywords: ["reganancia de peso manga gástrica", "cirugía de revisión bariátrica CDMX", "conversión de manga a bypass", "reflujo después de manga gástrica"]
+      title: "Complicaciones Post-Bariátricas y Reflujo CDMX | Dr. David Hernández",
+      description: "Evaluación de reflujo, intolerancia alimentaria y hernias en pacientes post-bariátricos en la Ciudad de México. Dr. David Ernesto Hernández Torres.",
+      keywords: ["complicaciones manga gástrica CDMX", "reflujo después de cirgía bariátrica", "segunda opinión cirugía bariátrica", "intolerancia alimentaria post-operatoria"]
     }
   },
   {

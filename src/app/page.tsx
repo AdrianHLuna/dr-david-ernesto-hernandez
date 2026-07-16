@@ -80,14 +80,14 @@ export default function Home() {
               </div>
               
               <h1 className="text-4xl sm:text-5xl lg:text-5xl font-black text-slate-900 leading-tight tracking-tight font-serif">
-                Cirugía Bariátrica y Digestiva <br />
+                Cirugía General de Mínima Invasión <br />
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-teal-600">
-                  Segura y de Mínima Invasión.
+                  Segura, Precisa y de Alta Calidad.
                 </span>
               </h1>
               
               <p className="text-base sm:text-lg text-slate-600 max-w-xl mx-auto lg:mx-0 leading-relaxed font-light">
-                Tratamientos especializados para combatir la obesidad, corregir hernias complejas y erradicar el reflujo gastroesofágico bajo los más altos estándares de calidad internacional en la Ciudad de México.
+                Tratamiento laparoscópico especializado de hernias abdominales, vesícula biliar, reflujo gastroesofágico, nódulos tiroideos y urgencias gastrointestinales bajo los más altos estándares de calidad en la Ciudad de México.
               </p>
               
               {/* Credential badges */}

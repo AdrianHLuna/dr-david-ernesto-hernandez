@@ -3,10 +3,10 @@ import { MedicalService } from "@/types/schema";
 export const services: MedicalService[] = [
   {
     id: "dh-ser-001",
-    slug: "consulta-cirugia-general-y-bariatrica",
-    name: "Consulta Especializada en Cirugía General y Bariátrica",
-    description: "Consulta de valoración inicial para el diagnóstico de obesidad, reflujo, piedras en la vesícula y hernias de pared abdominal.",
-    longDescription: "La consulta de primera vez con el Dr. David Ernesto Hernández Torres consiste en una evaluación médica exhaustiva. Se realiza una revisión clínica detallada de tu historial de salud, síntomas y estudios previos. Si padeces obesidad, se calcula tu Índice de Masa Corporal (IMC) y se evalúan tus comorbilidades (diabetes, hipertensión) para diseñar un plan quirúrgico personalizado de manga o bypass gástrico. Asimismo, se valoran quirúrgicamente problemas de hernias abdominales o reflujo gastroesofágico, brindando una explicación clara del tratamiento óptimo.",
+    slug: "consulta-cirugia-general",
+    name: "Consulta Especializada en Cirugía General",
+    description: "Consulta de valoración inicial para el diagnóstico de hernias, reflujo gastroesofágico, piedras en la vesícula, apendicitis y nódulos tiroideos.",
+    longDescription: "La consulta de primera vez con el Dr. David Ernesto Hernández Torres consiste en una evaluación médica exhaustiva. Se realiza una revisión clínica detallada de tu historial de salud, síntomas y estudios previos. Se valoran y diagnostican problemas de hernias abdominales, padecimientos de la vesícula, reflujo gastroesofágico y hernia hiatal, nódulos tiroideos y urgencias gastrointestinales, brindando una explicación clara del tratamiento quirúrgico óptimo para cada caso.",
     type: "consultorio",
     anesthesiaType: "Ninguna",
     duration: "45 a 60 minutos",
@@ -15,7 +15,7 @@ export const services: MedicalService[] = [
     benefits: [
       "Diagnóstico preciso y plan de tratamiento quirúrgico a la medida.",
       "Cálculo e interpretación de estudios de laboratorio, ultrasonidos y endoscopias.",
-      "Evaluación inicial completa para cirugía de manga gástrica o bypass.",
+      "Valoración completa de hernias, vesícula, reflujo, tiroides y apendicitis.",
       "Explicación detallada de riesgos, beneficios y el proceso de recuperación."
     ],
     postOpRecommendations: [
@@ -25,157 +25,16 @@ export const services: MedicalService[] = [
     ],
     priceRange: "$1,100 MXN",
     technicalSpecs: {
-      "Alcance": "Valoración inicial de cirugía general y bariatría",
+      "Alcance": "Valoración inicial de cirugía general",
       "Estudios en consulta": "Exploración física abdominal detallada y toma de signos vitales",
       "Financiamiento": "Meses con intereses fijos y diferidos desde 6 a 24 meses únicamente con Mend Pay"
     },
-    relatedConditions: ["obesidad-clinica", "reganancia-de-peso-bariatrica", "reflujo-y-hernia-hiatal", "piedras-en-la-vesicula", "hernias-abdominales"],
+    relatedConditions: ["reflujo-y-hernia-hiatal", "piedras-en-la-vesicula", "hernias-abdominales", "apendicitis-aguda", "nodulos-tiroideos"],
     image: "/servicios/consulta.png",
     seo: {
-      title: "Consulta de Cirugía General y Bariátrica CDMX | Dr. David Hernández",
-      description: "Agende su consulta de valoración inicial por obesidad, reflujo o hernias en Roma Norte y Polanco. Costo: $1,100 MXN.",
-      keywords: ["consulta cirujano general CDMX", "cirujano bariatra Roma Norte", "valoración manga gástrica CDMX", "doctor de obesidad consulta"]
-    }
-  },
-  {
-    id: "dh-ser-002",
-    slug: "consulta-subsecuente-y-seguimiento",
-    name: "Consulta Subsecuente y de Seguimiento Postoperatorio",
-    description: "Consulta de control para el seguimiento clínico de pacientes operados o bajo tratamiento médico continuo.",
-    longDescription: "La consulta subsecuente permite el monitoreo cercano del proceso de cicatrización y evolución metabólica del paciente operado. En pacientes bariátricos, es vital para dar seguimiento a la progresión de la dieta (líquida, papilla, blanda y sólida) y vigilar la tolerancia alimentaria. En pacientes operados de hernias o vesícula, permite retirar puntos de sutura, vigilar la herida y autorizar el regreso gradual a las actividades cotidianas del paciente.",
-    type: "consultorio",
-    anesthesiaType: "Ninguna",
-    duration: "30 minutos",
-    recoveryTime: "Inmediata",
-    isPainful: false,
-    benefits: [
-      "Retiro de puntos y control del estado de las heridas quirúrgicas.",
-      "Seguimiento nutricional y metabólico post-cirugía bariátrica.",
-      "Detección y manejo oportuno de intolerancia alimentaria o reflujo.",
-      "Autorización médica para el regreso seguro a actividades físicas o laborales."
-    ],
-    postOpRecommendations: [
-      "Reportar cualquier síntoma inusual antes de su cita (fiebre o dolor intenso).",
-      "Seguir las pautas de alimentación indicadas previamente.",
-      "Acudir con ropa cómoda que facilite la exploración del abdomen."
-    ],
-    priceRange: "$800 MXN",
-    technicalSpecs: {
-      "Propósito": "Control y seguimiento postoperatorio",
-      "Frecuencia sugerida": "Según indicación quirúrgica (típicamente a los 7 días, 1 mes y 3 meses post-cirugía)"
-    },
-    relatedConditions: ["obesidad-clinica", "reganancia-de-peso-bariatrica", "reflujo-y-hernia-hiatal", "piedras-en-la-vesicula", "hernias-abdominales"],
-    image: "/servicios/consulta.png",
-    seo: {
-      title: "Consulta Subsecuente y Control Postoperatorio | Dr. David Hernández",
-      description: "Seguimiento médico estrecho para pacientes operados de manga, bypass, vesícula o hernias. Consulta en Roma Norte y Polanco.",
-      keywords: ["consulta subsecuente cirujano", "control postoperatorio CDMX", "doctor de seguimiento bariátrico", "retiro de puntos cirugía general"]
-    }
-  },
-  {
-    id: "dh-ser-003",
-    slug: "consulta-segunda-opinion",
-    name: "Valoración de Segunda Opinión Médica",
-    description: "Evaluación detallada para confirmar diagnósticos o proponer alternativas quirúrgicas ante cirugías programadas complejas.",
-    longDescription: "La consulta de segunda opinión ofrece al paciente la certeza y tranquilidad necesarias antes de someterse a una intervención quirúrgica mayor o de revisión. El Dr. David Hernández analiza minuciosamente tu expediente clínico, estudios de imagen (ultrasonidos, tomografías) e historial médico para corroborar el diagnóstico de colecistitis, hernia de pared abdominal, o queratopatía tiroidea, y sugerir si es candidato a una técnica por laparoscopia (mínima invasión) de menor riesgo.",
-    type: "consultorio",
-    anesthesiaType: "Ninguna",
-    duration: "60 minutos",
-    recoveryTime: "Inmediata",
-    isPainful: false,
-    benefits: [
-      "Confirmación diagnóstica basada en evidencia científica y guías internacionales.",
-      "Evaluación de técnicas laparoscópicas avanzadas de mínima invasión.",
-      "Análisis detallado de cirugías bariátricas previas con falla o reganancia.",
-      "Absoluta discreción y profesionalismo en la revisión de tu caso."
-    ],
-    postOpRecommendations: [
-      "Llevar todo el expediente clínico impreso o digital (recetas, notas médicas, reportes quirúrgicos previos).",
-      "Traer los discos o carpetas con los estudios de imagen (no solo la interpretación escrita)."
-    ],
-    priceRange: "$1,100 MXN",
-    technicalSpecs: {
-      "Alcance": "Revisión clínica exhaustiva y propuesta terapéutica",
-      "Especialidad": "Cirugía de revisión bariátrica y hernias complejas"
-    },
-    relatedConditions: ["reganancia-de-peso-bariatrica", "hernias-abdominales", "reflujo-y-hernia-hiatal", "nodulos-tiroideos"],
-    image: "/servicios/consulta.png",
-    seo: {
-      title: "Segunda Opinión Médica en Cirugía y Bariometría CDMX",
-      description: "Tome decisiones seguras sobre su salud. Consulta de segunda opinión por cirugía de hernias, vesícula o bariátrica con el Dr. David Hernández.",
-      keywords: ["segunda opinion cirujano CDMX", "cirugía de revisión bariátrica", "doctor especialista en hernias complejas", "evaluación de cirugía previa"]
-    }
-  },
-  {
-    id: "dh-ser-004",
-    slug: "consulta-virtual-remota",
-    name: "Consulta Virtual (Telemedicina)",
-    description: "Orientación médica online por videollamada para la revisión de estudios, pre-valoración o seguimiento a distancia.",
-    longDescription: "La consulta virtual te permite tener acceso al Dr. David Ernesto Hernández Torres desde la comodidad de tu hogar o lugar de trabajo. Es ideal para una pre-valoración bariátrica (donde se discuten opciones de manga o bypass), para revisar y explicar resultados de exámenes de laboratorio o estudios de imagen encargados en consultas previas, o para el seguimiento rutinario de pacientes estables que se encuentran fuera de la Ciudad de México.",
-    type: "consultorio",
-    anesthesiaType: "Ninguna",
-    duration: "30 minutos",
-    recoveryTime: "Inmediata",
-    isPainful: false,
-    benefits: [
-      "Acceso médico inmediato desde cualquier lugar sin necesidad de trasladarse.",
-      "Revisión y lectura cómoda de exámenes clínicos y estudios de imagen.",
-      "Orientación bariátrica inicial antes de programar tus estudios presenciales.",
-      "Seguimiento clínico para pacientes foráneos."
-    ],
-    postOpRecommendations: [
-      "Asegurar una conexión estable a internet y una cámara de video funcional.",
-      "Enviar los estudios de laboratorio o reportes por correo electrónico antes de la videollamada."
-    ],
-    priceRange: "$800 MXN",
-    technicalSpecs: {
-      "Plataforma": "Videollamada segura (Google Meet o Zoom)",
-      "Requisito": "Envío previo de estudios en formato PDF o imagen"
-    },
-    relatedConditions: ["obesidad-clinica", "reganancia-de-peso-bariatrica", "reflujo-y-hernia-hiatal", "piedras-en-la-vesicula"],
-    image: "/servicios/consulta.png",
-    seo: {
-      title: "Consulta en Línea (Telemedicina) Cirugía General | Dr. David",
-      description: "Consulta médica online con el Dr. David Ernesto Hernández Torres. Revisión de estudios y pre-valoración bariátrica a distancia. Costo: $800 MXN.",
-      keywords: ["consulta medica online cdmx", "telemedicina cirujano general", "videollamada doctor obesidad", "segunda opinion virtual"]
-    }
-  },
-  {
-    id: "dh-ser-005",
-    slug: "manga-gastrica-y-bypass-laparoscopico",
-    name: "Cirugía Bariátrica (Manga Gástrica y Bypass Gástrico)",
-    description: "Procedimientos laparoscópicos de mínima invasión para la reducción del tamaño estomacal y el control definitivo de la obesidad clínica.",
-    longDescription: "La cirugía bariátrica por laparoscopia representa el tratamiento más efectivo y duradero para combatir la obesidad moderada a severa y controlar enfermedades metabólicas asociadas. La Manga Gástrica (Gastrectomía Vertical) consiste en retirar aproximadamente el 80% del estómago, creando un reservorio tubular estrecho. Esto limita mecánicamente la ingesta de comida y reduce la hormona del hambre (grelina). El Bypass Gástrico (derivación) reduce el tamaño gástrico y reconecta el intestino para limitar la absorción de calorías y grasas, siendo altamente metabólico para lograr la remisión de la diabetes tipo 2. Ambas cirugías se realizan mediante puertos milimétricos, garantizando menor dolor y rápida recuperación.",
-    type: "hospitalario",
-    anesthesiaType: "Anestesia General",
-    duration: "60 a 120 minutos",
-    recoveryTime: "7 a 10 días para actividades ligeras; 4 semanas para ejercicio de fuerza",
-    isPainful: false, // Controlado con analgesia multimodal postoperatoria
-    benefits: [
-      "Pérdida del 60% al 85% del exceso de peso corporal en el primer año.",
-      "Remisión de la diabetes tipo 2 e hipertensión arterial en más del 80% de los casos.",
-      "Resolución de apnea del sueño y disminución del colesterol y triglicéridos.",
-      "Recuperación rápida por abordaje laparoscópico de mínima invasión.",
-      "Mejora sustancial en la movilidad, salud articular y autoestima."
-    ],
-    postOpRecommendations: [
-      "Llevar una dieta líquida estricta durante las primeras 2 semanas postoperatorias.",
-      "Caminar diariamente desde el primer día para prevenir coágulos y acelerar la digestión.",
-      "Tomar suplementos bariátricos diarios de por vida para asegurar la ingesta de vitaminas.",
-      "Evitar cargar más de 5 kg de peso durante el primer mes."
-    ],
-    priceRange: "Rango de precio sujeto a valoración hospitalaria",
-    technicalSpecs: {
-      "Técnica": "Laparoscopía de 4 o 5 puertos milimétricos (mínima invasión)",
-      "Materiales": "Grapadoras quirúrgicas automáticas de titanio de última generación",
-      "Estancia": "1 a 2 noches de hospitalización para control médico inicial"
-    },
-    relatedConditions: ["obesidad-clinica", "reganancia-de-peso-bariatrica"],
-    image: "/servicios/manga-gastrica.png",
-    seo: {
-      title: "Manga Gástrica y Bypass Gástrico en CDMX | Dr. David Hernández",
-      description: "Cirugía para perder peso y controlar la diabetes en la CDMX. Manga y bypass gástrico laparoscópico con el Dr. David Ernesto Hernández Torres.",
-      keywords: ["manga gastrica cdmx precio", "bypass gastrico df", "cirujano bariatra cdmx", "operacion de obesidad df"]
+      title: "Consulta de Cirugía General CDMX | Dr. David Hernández Torres",
+      description: "Agende su consulta de valoración inicial por hernias, reflujo, vesícula o tiroides en Roma Norte y Polanco. Costo: $1,100 MXN.",
+      keywords: ["consulta cirujano general CDMX", "cirujano general Roma Norte", "valoración hernia CDMX", "doctor cirugía general consulta"]
     }
   },
   {
