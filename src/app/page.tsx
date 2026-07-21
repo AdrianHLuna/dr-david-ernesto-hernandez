@@ -133,7 +133,7 @@ export default function Home() {
                 style={{ minHeight: "580px" }}
               >
                 <img
-                  src="/doctor.jpg"
+                  src="/hero.jpg"
                   alt={`${doctor.title} ${doctor.name} — Cirujano Bariátrico y General en CDMX`}
                   className="w-full h-full object-cover object-top"
                   style={{ minHeight: "580px" }}
@@ -204,26 +204,28 @@ export default function Home() {
             {/* Left: Doctor Photo + Philosophy overlay */}
             <div className="lg:col-span-5">
               <div className="sticky top-24 relative rounded-3xl overflow-hidden shadow-2xl shadow-slate-200/70 border border-slate-200" style={{ minHeight: "600px" }}>
-                {/* Doctor photo */}
+                {/* Doctor photo - focused on doctor (right side of image) */}
                 <img
-                  src="/doctor.jpg"
+                  src="/aboutme.jpg"
                   alt={`${doctor.title} ${doctor.name}`}
-                  className="w-full h-full object-cover object-top absolute inset-0"
-                  style={{ minHeight: "600px" }}
+                  className="w-full h-full object-cover absolute inset-0"
+                  style={{ minHeight: "600px", objectPosition: "70% 20%" }}
                 />
-                {/* Soft gradient top */}
-                <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-slate-900/75" />
+                {/* Soft gradient bottom overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/40 to-transparent pointer-events-none" />
 
-                {/* Philosophy quote overlay at bottom */}
-                <div className="absolute inset-x-0 bottom-0 p-8">
-                  <span className="text-[10px] font-bold text-emerald-400 uppercase tracking-widest mb-3 block">Filosofía del Especialista</span>
-                  <p className="text-base sm:text-lg font-serif text-white italic leading-relaxed mb-5">
-                    &ldquo;{doctor.philosophy}&rdquo;
-                  </p>
-                  <div className="h-px w-10 bg-emerald-500 mb-4" />
-                  <div>
-                    <h4 className="font-black text-white text-sm uppercase tracking-wider">{doctor.title} {doctor.name}</h4>
-                    <p className="text-[10px] text-emerald-400 font-bold uppercase tracking-widest">{doctor.subspecialty}</p>
+                {/* Philosophy quote overlay at bottom with high legibility glass card */}
+                <div className="absolute inset-x-0 bottom-0 p-5 sm:p-6">
+                  <div className="bg-slate-950/80 backdrop-blur-md border border-white/15 rounded-2xl p-5 shadow-2xl">
+                    <span className="text-[11px] font-bold text-emerald-300 uppercase tracking-widest mb-2 block">Filosofía del Especialista</span>
+                    <p className="text-xs sm:text-sm font-serif text-white italic leading-relaxed mb-4">
+                      &ldquo;{doctor.philosophy}&rdquo;
+                    </p>
+                    <div className="h-px w-10 bg-emerald-400 mb-3" />
+                    <div>
+                      <h4 className="font-black text-white text-xs sm:text-sm uppercase tracking-wider">{doctor.title} {doctor.name}</h4>
+                      <p className="text-[10px] text-emerald-300 font-bold uppercase tracking-wider mt-0.5">{doctor.subspecialty}</p>
+                    </div>
                   </div>
                 </div>
               </div>
