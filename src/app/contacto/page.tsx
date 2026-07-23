@@ -18,7 +18,7 @@ export default function ContactoPage() {
       between: "Entre Calle Mérida y Calle Córdoba",
       schedule: "Lunes a Viernes: 14:00 - 20:00 | Sábado: 8:00 - 15:00",
       phone: "5618556040",
-      mapUrl: "https://maps.app.goo.gl/9Zp26",
+      mapUrl: "https://g.page/r/CRpfRTPdVagQEBM/",
       iframeUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.502693527633!2d-99.16104782418476!3d19.4222502!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff39413bcab3%3A0x64fbcab4567efbcd!2sCalle%20Durango%2064%2C%20Roma%20Norte%2C%2006700%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses-419!2smx!4v1710000000000!5m2!1ses-419!2smx"
     },
     polanco: {
@@ -27,7 +27,7 @@ export default function ContactoPage() {
       between: "Entre Avenida Horacio y Avenida Homero",
       schedule: "Lunes a Viernes: 15:00 - 20:00 (Sujeto a disponibilidad)",
       phone: "5610597042",
-      mapUrl: "https://maps.app.goo.gl/9Zp26",
+      mapUrl: "https://g.page/r/CcqO37YbTeVrEBM/",
       iframeUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3725.295489678129!2d-99.1912563!3d19.4312502!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d201ab3b9b1ab3%3A0xb1b2bc34567efbcd!2sCalle%20Tem%C3%ADstocles%20210%2C%20Polanco%2C%20Polanco%20IV%20Secc%2C%2011560%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses-419!2smx!4v1710000000000!5m2!1ses-419!2smx"
     }
   };

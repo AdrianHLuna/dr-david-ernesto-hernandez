@@ -16,7 +16,7 @@ export const doctor: DoctorProfile = {
   city: "Ciudad de México",
   state: "CDMX",
   country: "México",
-  googleMapsUrl: "https://maps.google.com/?q=Calle+Durango+64+Roma+Norte+CDMX",
+  googleMapsUrl: "https://g.page/r/CRpfRTPdVagQEBM/",
   consultationPrice: 1100,
   paymentMethods: ["Efectivo", "Transferencia", "Tarjeta de Débito", "Tarjeta de Crédito", "Pagos NFC", "Cheques"],
   insurances: ["Todos los seguros médicos (Pago Directo y Reembolso)"],
@@ -71,7 +71,9 @@ export const doctor: DoctorProfile = {
     }
   ],
   sameAs: [
-    "https://www.doctoralia.com.mx/david-ernesto-hernandez-torres/cirujano-general/ciudad-de-mexico"
+    "https://www.doctoralia.com.mx/david-ernesto-hernandez-torres/cirujano-general/ciudad-de-mexico",
+    "https://g.page/r/CRpfRTPdVagQEBM/",
+    "https://g.page/r/CcqO37YbTeVrEBM/"
   ]
 };
 
@@ -86,7 +88,7 @@ export const offices = [
     cp: "06700",
     phone: "5618556040",
     whatsapp: "5618556040",
-    googleMapsUrl: "https://maps.google.com/?q=Calle+Durango+64+Roma+Norte+Cuauht%C3%A9moc+06700+CDMX"
+    googleMapsUrl: "https://g.page/r/CRpfRTPdVagQEBM/"
   },
   {
     id: "office-2",
@@ -97,6 +99,6 @@ export const offices = [
     cp: "11560",
     phone: "5610597042",
     whatsapp: "5610597042",
-    googleMapsUrl: "https://maps.google.com/?q=Calle+Tem%C3%ADstocles+210+Polanco+Miguel+Hidalgo+11560+CDMX"
+    googleMapsUrl: "https://g.page/r/CcqO37YbTeVrEBM/"
   }
 ];
