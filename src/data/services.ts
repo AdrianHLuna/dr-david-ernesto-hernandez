@@ -142,5 +142,112 @@ export const services: MedicalService[] = [
       description: "Tratamiento definitivo para el reflujo crónico y la hernia hiatal por laparoscopia. Agende su consulta en Roma Norte y Polanco.",
       keywords: ["cirugia de reflujo precio cdmx", "operacion de hernia hiatal costo mexico", "fundoplicatura tipo nissen df", "curar reflujo gastroesofágico"]
     }
+  },
+  {
+    id: "dh-ser-002",
+    slug: "manga-gastrica-laparoscopica",
+    name: "Manga Gástrica por Laparoscopia",
+    description: "Procedimiento bariátrico de mínima invasión que reduce la capacidad del estómago en un 80%, disminuyendo el apetito y promoviendo la pérdida de peso sostenible.",
+    longDescription: "La manga gástrica por laparoscopia (gastrectomía vertical en manga) es una técnica quirúrgica altamente efectiva para el tratamiento de la obesidad y sus comorbilidades. Mediante incisiones milimétricas, se retira aproximadamente el 80% del estómago, transformándolo en un tubo delgado. Esto reduce drásticamente la capacidad de ingesta de alimentos y elimina la principal zona productora de ghrelina (la hormona responsable de la sensación de hambre), permitiendo una saciedad rápida y una pérdida de peso progresiva y duradera.",
+    type: "hospitalario",
+    anesthesiaType: "Anestesia General",
+    duration: "60 a 90 minutos",
+    recoveryTime: "7 a 10 días para actividades diarias; 4 a 6 semanas para ejercicio físico intenso",
+    isPainful: false,
+    benefits: [
+      "Reducción sostenida del 60% al 70% del exceso de peso corporal.",
+      "Disminución drástica de la sensación de hambre por reducción de ghrelina.",
+      "Mejora o remisión de la diabetes tipo 2, hipertensión y apnea del sueño.",
+      "Técnica laparoscópica de mínima invasión con rápida recuperación."
+    ],
+    postOpRecommendations: [
+      "Seguir el esquema dietético por fases (líquidos, puré, alimentos blandos y sólidos).",
+      "Tomar la suplementación vitamínica y mineral indicada.",
+      "Mantener hidratación constante a pequeños sorbos a lo largo del día."
+    ],
+    priceRange: "Sujeto a valoración hospitalaria",
+    technicalSpecs: {
+      "Técnica": "Gastrectomía vertical en manga laparoscópica",
+      "Estancia hospitalaria": "1 a 2 noches de hospitalización",
+      "Suturas": "Engrapado quirúrgico automático tri-grapado con refuerzo"
+    },
+    relatedConditions: ["obesidad-clinica", "reganancia-de-peso-bariatrica"],
+    image: "/servicios/manga-gastrica.png",
+    seo: {
+      title: "Manga Gástrica Laparoscópica CDMX | Dr. David Hernández",
+      description: "Cirugía de manga gástrica por laparoscopia en CDMX (Roma Norte y Polanco). Pierda peso de forma segura y duradera con el Dr. David Hernández Torres.",
+      keywords: ["manga gastrica cdmx", "cirugia bariatrica manga gastrica", "manga gastrica precio cdmx", "cirujano bariatrico cdmx"]
+    }
+  },
+  {
+    id: "dh-ser-003",
+    slug: "bypass-gastrico-laparoscopico",
+    name: "Bypass Gástrico por Laparoscopia",
+    description: "Cirugía bariátrica y metabólica que combina restricción gástrica y malabsorción, ideal para obesidad severa, diabetes y reflujo severo.",
+    longDescription: "El Bypass Gástrico en Y de Roux laparoscópico es considerado el estándar de oro en cirugía bariátrica a nivel mundial. Consiste en la creación de un pequeño reservorio gástrico conectado directamente al intestino delgado, desviando el paso del resto del estómago y duodeno. Este doble mecanismo restrictivo y metabólico genera cambios hormonales inmediatos que favorecen un excelente control glicémico (diabetes), la eliminación del reflujo gastroesofágico y una importante pérdida de peso a largo plazo.",
+    type: "hospitalario",
+    anesthesiaType: "Anestesia General",
+    duration: "90 a 120 minutos",
+    recoveryTime: "10 a 14 días para retorno laboral; 6 semanas para actividad física intensa",
+    isPainful: false,
+    benefits: [
+      "Pérdida del 70% al 80% del exceso de peso corporal acumulado.",
+      "Excelente tasa de remisión o control superior de Diabetes Mellitus Tipo 2.",
+      "Control y eliminación definitiva del reflujo gastroesofágico severo.",
+      "Normalización del perfil lipídico y reducción del riesgo cardiovascular."
+    ],
+    postOpRecommendations: [
+      "Apego estricto a la suplementación vitamínica continua y controles de laboratorio.",
+      "Respetar las indicaciones de la nutricionista bariátrica.",
+      "Evitar el consumo de azúcares simples para prevenir el síndrome de dumping."
+    ],
+    priceRange: "Sujeto a valoración hospitalaria",
+    technicalSpecs: {
+      "Técnica": "Bypass gástrico laparoscópico en Y de Roux",
+      "Estancia hospitalaria": "1 a 2 noches de hospitalización con monitoreo especializado",
+      "Anastomosis": "Conexión gastro-yeyunal e yeyuno-yeyunal de alta precisión"
+    },
+    relatedConditions: ["obesidad-clinica", "reganancia-de-peso-bariatrica", "reflujo-y-hernia-hiatal"],
+    image: "/servicios/bypass-gastrico.png",
+    seo: {
+      title: "Bypass Gástrico Laparoscópico CDMX | Dr. David Hernández",
+      description: "Cirugía de bypass gástrico por laparoscopia en CDMX para obesidad y diabetes. Valoración en Roma Norte y Polanco con el Dr. David Hernández Torres.",
+      keywords: ["bypass gastrico cdmx", "cirugia metabolica diabetes", "bypass gastrico precio mexico", "cirujano bariatrico roma norte polanco"]
+    }
+  },
+  {
+    id: "dh-ser-004",
+    slug: "control-de-peso-integral",
+    name: "Control de Peso y Evaluación Bariátrica",
+    description: "Programa médico integral para la evaluación metabólica, diagnóstico de complicaciones digestivas y acompañamiento en la pérdida de peso.",
+    longDescription: "El programa de Control de Peso y Evaluación Bariátrica está dirigido a pacientes que buscan una alternativa médica integral frente al sobrepeso y la obesidad. Bajo la atención del Dr. David Ernesto Hernández Torres, se realiza una valoración clínica profunda del estado metabólico, identificación de comorbilidades (diabetes, hipertensión, hígado graso), así como el descarte de problemas quirúrgicos asociados (hernias, litiasis biliar, reflujo). El programa determina la indicación de tratamiento médico o la preparación idónea para cirugía bariátrica.",
+    type: "consultorio",
+    anesthesiaType: "Ninguna",
+    duration: "45 a 60 minutos",
+    recoveryTime: "Inmediata",
+    isPainful: false,
+    benefits: [
+      "Evaluación médica personalizada y valoración de riesgos metabólicos.",
+      "Diagnóstico oportuno de complicaciones asociadas al sobrepeso.",
+      "Ruta médica clara: tratamiento nutricional o indicación bariátrica.",
+      "Acompañamiento clínico cercano con enfoque ético y seguro."
+    ],
+    postOpRecommendations: [
+      "Presentar estudios de laboratorio recientes (química sanguínea, perfil de lípidos, glucosa).",
+      "Realizar seguimiento periódico con el equipo médico multidisciplinario."
+    ],
+    priceRange: "$1,100 MXN (Consulta inicial)",
+    technicalSpecs: {
+      "Alcance": "Valoración médica y metabólica inicial y seguimiento",
+      "Diagnóstico": "Cálculo de IMC, riesgo cardiovascular y estado gastrointestinal",
+      "Financiamiento": "Meses con intereses fijos y diferidos desde 6 a 24 meses únicamente con Mend Pay"
+    },
+    relatedConditions: ["obesidad-clinica", "reganancia-de-peso-bariatrica"],
+    image: "/servicios/control-de-peso.png",
+    seo: {
+      title: "Control de Peso y Evaluación Bariátrica CDMX | Dr. David Hernández",
+      description: "Programa médico de control de peso y valoración bariátrica en Roma Norte y Polanco, CDMX. Agende su cita con el Dr. David Hernández Torres.",
+      keywords: ["control de peso cdmx", "tratamiento medico obesidad cdmx", "evaluacion bariatrica roma norte", "doctor para bajar de peso cdmx"]
+    }
   }
 ];

@@ -47,7 +47,7 @@ export const diseases: MedicalCondition[] = [
         answer: "Atiende hernias abdominales asociadas al sobrepeso, reflujo gastroesofágico, hernia hiatal, colecistitis y cálculos biliares frecuentes en pacientes con obesidad, así como complicaciones gastrointestinales relacionadas al exceso de peso."
       }
     ],
-    relatedServices: ["consulta-cirugia-general"],
+    relatedServices: ["consulta-cirugia-general", "manga-gastrica-laparoscopica", "bypass-gastrico-laparoscopico", "control-de-peso-integral"],
     relatedSymptoms: ["dificultad-bajar-peso", "ardor-pecho-y-agruras"],
     image: "/enfermedades/obesidad.png",
     seo: {
@@ -101,7 +101,7 @@ export const diseases: MedicalCondition[] = [
         answer: "La manga gástrica aumenta la presión dentro del estómago residual y altera la anatomía de la unión esófago-gástrica, lo que provoca reflujo crónico. Este reflujo puede valorarse y manejarse quirúrgicamente con una fundoplicatura laparoscópica."
       }
     ],
-    relatedServices: ["consulta-segunda-opinion", "cirugia-reflujo-y-hernia-hiatal"],
+    relatedServices: ["consulta-cirugia-general", "manga-gastrica-laparoscopica", "bypass-gastrico-laparoscopico", "control-de-peso-integral", "cirugia-reflujo-y-hernia-hiatal"],
     relatedSymptoms: ["dificultad-bajar-peso", "ardor-pecho-y-agruras"],
     image: "/enfermedades/reganancia.png",
     seo: {

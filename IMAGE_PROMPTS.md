@@ -306,6 +306,38 @@ Negative Prompt: surgeons, people standing, doctors, blood, red, open wounds, fl
 
 ---
 
+### `bypass-gastrico.jpg`
+**Servicio:** Bypass Gástrico por Laparoscopia
+**Prompt:**
+```
+A clean, professional 3D medical illustration and laparoscopic monitor view of a gastric bypass procedure (bypass gástrico), displaying a small gastric pouch connected to a loop of small intestine, clean anatomical illustration with soft slate and emerald tones, textbook quality, no blood, no open wounds, spotless presentation.
+Lighting: Clean, bright medical studio lighting, soft shadows.
+Color Palette: Slate 900 (#0f172a), Emerald 600 (#059669), Emerald 500 (#10b981), Studio White, Anthracite (#333333).
+Composition: Symmetrical scientific view or focused clinical macro.
+Mood: Informative, clear, professional.
+Suffixes: realistic medical CGI, 8k, photorealistic textures, unreal engine 5 style
+--ar 16:9 --v 6.0
+Negative Prompt: surgeons, people standing, doctors, blood, red, open wounds, flesh, graphic, cuts, hologram, sci-fi, futuristic, spaceship, cyberpunk, neon, glowing digital UI, hud, data rings, blueprints, user interface, text, words, letters, watermark, signature.
+```
+
+---
+
+### `control-de-peso.jpg`
+**Servicio:** Programa de Control de Peso y Evaluación Bariátrica
+**Prompt:**
+```
+A clean, high-end medical product shot featuring a sleek clinical tape measure, a digital body composition scale plate, and a medical stethoscope resting on a modern white desk in a bright consultation office, representing medical weight control and metabolic health management.
+Lighting: Clean, bright medical studio lighting, soft shadows.
+Color Palette: Slate 900 (#0f172a), Emerald 600 (#059669), Emerald 500 (#10b981), Studio White, Anthracite (#333333).
+Composition: Symmetrical scientific view or focused clinical macro.
+Mood: Informative, clear, professional.
+Suffixes: realistic medical CGI, 8k, photorealistic textures, unreal engine 5 style
+--ar 16:9 --v 6.0
+Negative Prompt: hologram, sci-fi, futuristic, spaceship, cyberpunk, neon, glowing digital UI, hud, data rings, blueprints, user interface, text, words, letters, watermark, signature.
+```
+
+---
+
 ## 🤒 Síntomas (`/public/images/symptoms/`)
 
 ### `dificultad-peso.jpg`
