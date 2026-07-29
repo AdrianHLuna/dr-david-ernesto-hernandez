@@ -11,7 +11,7 @@ export const doctor: DoctorProfile = {
   cofepris: undefined,
   phone: "5618556040",
   whatsapp: "5618556040",
-  email: "contacto@drdavidhernandez.com",
+  email: "contacto@drdavidernestohernandez.com",
   address: "Roma Norte: Durango 64, Cons. 401 | Polanco: Temístocles 210, Cons. 201",
   city: "Ciudad de México",
   state: "CDMX",

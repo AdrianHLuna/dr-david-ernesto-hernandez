@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: `${doctor.title} ${doctor.name} | ${doctor.specialty}`,
     description: doctor.bio.substring(0, 150) + "...",
-    url: "https://drdavidhernandez.com",
+    url: "https://drdavidernestohernandez.com",
     siteName: `${doctor.title} ${doctor.name}`,
     locale: "es_MX",
     type: "website",
