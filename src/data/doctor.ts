@@ -8,7 +8,7 @@ export const doctor: DoctorProfile = {
   subspecialty: "Especialista en Laparoscopia, Hernias, Vesícula, Reflujo y Tiroides",
   cedula: "12748741", // IPN
   cedulaEspecialidad: "15115068", // UNAM
-  cofepris: undefined,
+  cofepris: "2609152002A00535",
   phone: "5618556040",
   whatsapp: "5618556040",
   email: "contacto@drdavidernestohernandez.com",
